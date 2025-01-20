@@ -1,0 +1,225 @@
+.navber {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navber-links {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+/* .navber-links ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+} */
+
+.navber-links ul:hover li {
+  opacity: 0.4;
+}
+
+.navber-links ul li:hover {
+  opacity: 1 !important;
+}
+
+.navber-links ul li {
+  list-style: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.hoverArea:hover {
+}
+
+/* Apply hover effect to all h2 elements except the one being hovered */
+.solutions h2 {
+  list-style: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* When hovering over an h2 element, reduce the opacity of the other h2 elements */
+.solutions:hover h2 {
+  opacity: 0.4;
+  /* Reduce opacity of all h2s */
+}
+
+/* Keep the hovered h2 at full opacity */
+.solutions h2:hover {
+  opacity: 1 !important;
+}
+
+.custom-video-height {
+  height: 700px;
+  /* Adjust height as needed */
+}
+
+.navber-links .link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navber-links ul .dropdown {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: -5px;
+}
+
+.navber-links ul .dropdown-icon {
+  font-size: 35px;
+}
+
+.navber .card-containers {
+  position: absolute;
+  transition: all 0.7s cubic-bezier(0.4, 0, 1, 1),
+    all 0.7s cubic-bezier(0, 0, 0.2, 1);
+  top: -200px;
+  overflow: hidden;
+  left: 0;
+  padding-top: 20px;
+}
+
+.navber .card-containers:hover {
+  top: 60px;
+}
+
+.navber-links > ul li {
+  /* margin-right: 0px 26px !important; */
+  /* padding: 0px 26px !important; */
+  /* display: block; */
+  margin-top: 40px;
+}
+
+.navber .navber-menu {
+  background-color: var(--color-violet);
+  color: black;
+  font-size: 30px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+/* -------------- For Mobile device------------- */
+
+@media (min-width: 0px) and (max-width: 991px) {
+  /* .navber {
+    padding: 40px 20px;
+  } */
+
+  .navber-logo img {
+    width: 40px;
+    position: relative;
+  }
+
+  .navber .navber-menu {
+    border-radius: 4px;
+    display: flex;
+  }
+
+  .navber-links {
+    display: none;
+  }
+
+  @keyframes anime2 {
+    0% {
+      height: 20%;
+    }
+
+    100% {
+      height: 100%;
+    }
+  }
+
+  .side-menu-2 {
+    position: absolute;
+    font-weight: 700;
+    /* height: 120vh; */
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 23px;
+    /* animation: anime2 0.7s; */
+    border-bottom: 1px solid rgb(188, 185, 185);
+  }
+
+  .side-menu-2 ul li {
+    list-style: none;
+    padding: 3px 0px;
+    transition: all 0.3s ease;
+  }
+
+  .side-menu-2 ul li:hover {
+    color: var(--color-orange);
+    cursor: pointer;
+  }
+
+  .side-menu ul li.active {
+    color: var(--color-green);
+  }
+
+  .side-menu ul li.active:hover {
+    color: var(--color-green);
+  }
+
+  .side-menu-2 .side-menu-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+
+  .side-menu-top-menu {
+    background-color: var(--color-violet);
+    color: white;
+    height: 35px;
+    width: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .side-menu-top-menu:hover {
+    background-color: var(--color-orange);
+  }
+
+  .ss {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .sso {
+    border: 2px solid var(--color-violet);
+    width: 15%;
+    height: 10%;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .itemHover ul {
+    font-weight: 400;
+    padding: 10px 20px 10px 0;
+  }
+
+  .itemHover ul li {
+    padding: 10px 5px;
+    border: 1px solid var(--color-green);
+    margin-bottom: 5px;
+  }
+
+  .itemHover ul li:hover {
+    border-color: var(--color-orange);
+  }
+}

@@ -1,0 +1,33 @@
+/* Base marquee animation */
+@keyframes marquee {
+    100% {
+        transform: translateX(0);
+    }
+
+    0% {
+        transform: translateX(-500%);
+    }
+}
+
+/* Applying the animation to the marquee element */
+.animate-marquee {
+    display: flex;
+    animation: marquee 150s linear infinite;
+}
+
+/* Media query for small devices (e.g., mobile screens) */
+@media (max-width: 768px) {
+    .animate-marquee {
+        animation: marquee 20s linear infinite;
+    }
+
+    @keyframes marquee {
+        100% {
+            transform: translateX(0);
+        }
+
+        0% {
+            transform: translateX(-500%);
+        }
+    }
+}

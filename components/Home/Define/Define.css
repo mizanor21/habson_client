@@ -1,0 +1,12 @@
+.bgDefine {
+  background-image: url(../../../public/assets/define/about-bg.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: -50px 20px;
+}
+
+@media (max-width: 640px) {
+  .bgDefine {
+    background-image: none;
+  }
+}

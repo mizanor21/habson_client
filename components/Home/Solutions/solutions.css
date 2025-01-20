@@ -1,0 +1,84 @@
+.hover-container {
+  position: relative;
+  /* background-color: #1a202c; Initial background color */
+  transition: background-color 1s;
+  /* Transition for background color */
+}
+
+/* Hidden initially with max-height set to 0 */
+.hidden-on-hover {
+  display: block;
+  /* Keep the element in the flow */
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1s ease-out;
+  /* Smooth transition for height */
+}
+
+/* Visible on hover with max-height adjusted */
+.hover-container:hover .hidden-on-hover {
+  max-height: 500px;
+  /* Adjust this value as needed */
+}
+
+.slide-1:hover {
+  background-color: #013438;
+}
+
+.slide-2:hover {
+  background-color: #065866;
+}
+
+.slide-3:hover {
+  background-color: #078e92;
+}
+
+.slide-4:hover {
+  background-color: #fe3967;
+}
+
+.slide-5:hover {
+  background-color: #f76c88;
+}
+
+.slide-6:hover {
+  background-color: #f19200;
+}
+
+.slide-7:hover {
+  background-color: #24807f;
+}
+
+.slide-8:hover {
+  background-color: #5fc6b9;
+}
+
+.slide-9:hover {
+  background-color: #418da2;
+}
+
+.slide-10:hover {
+  background-color: #2d8fab;
+}
+
+/* @media (min-width: 1401px) and (max-width: 1450px) {
+  .solutionCard {
+    width: 480px;
+  }
+
+  .solutionCard .arrowIcon {
+    width: 60px;
+    height: 60px;
+  }
+} */
+
+@media (min-width: 0px) and (max-width: 1800px) {
+  /* .solutionCard {
+    width: 470px;
+  } */
+
+  .solutionCard .arrowIcon {
+    width: 60px;
+    height: 60px;
+  }
+}

@@ -1,0 +1,31 @@
+.tooltip {
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    pointer-events: none;
+    /* Prevent mouse events on tooltip */
+    overflow: hidden;
+    /* Hide overflow */
+    white-space: nowrap;
+    /* Prevent text wrapping */
+}
+
+.scrolling-text {
+    display: inline-block;
+    /* Required for animation */
+    animation: scroll 5s linear infinite;
+    /* Animation to scroll */
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(100%);
+        /* Start from right */
+    }
+
+    to {
+        transform: translateX(-100%);
+        /* Move to left */
+    }
+}

@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Sora:wght@100..800&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Add horizontal scrolling changes */
+body {
+  overflow-x: hidden;
+  cursor: url(/assets/cursor/cursor.png), auto;
+  font-family: "Sora", sans-serif;
+}
+
+@layer utilities {
+  .scrollbar {
+    @apply scrollbar-thin scrollbar-thumb-[#125b5c] scrollbar-track-gray-100 border border-[#125b5c];
+  }
+}
+
+::selection {
+  background-color: #125b5c;
+  color: white;
+}
+
+Link,
+video {
+  cursor: pointer;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -100% 0;
+  }
+
+  100% {
+    background-position: 100% 0;
+  }
+}
+
+.animate-shimmer {
+  background-size: 400% 100%;
+  animation: shimmer 2s infinite;
+}
+
+/* Add this to your global CSS or a component-specific CSS file */
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 6px solid rgba(0, 0, 0, 0.1);
+  border-top-color: #3498db;
+  /* Customize the color */
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.sectionTitle {
+  @apply text-[50px] font-[600] leading-[60px] text-gray-300 group-hover:text-white transition-colors duration-300 mb-5;
+}

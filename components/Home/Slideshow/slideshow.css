@@ -1,0 +1,86 @@
+/* Slideshow containers */
+.slideshow-left,
+.slideshow-right {
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Left half of the image */
+.left-half {
+    position: relative;
+
+    /* Slideshow containers */
+    .slideshow-left,
+    .slideshow-right {
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    /* Left half of the image */
+    .left-half {
+        position: relative;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    .left-half img {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 200%;
+        height: 100%;
+        object-fit: cover;
+        clip-path: inset(0 50% 0 0);
+        /* Show left half */
+    }
+
+    /* Right half of the image */
+    .right-half {
+        position: relative;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    .right-half img {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 200%;
+        height: 100%;
+        object-fit: cover;
+        clip-path: inset(0 0 0 50%);
+        /* Show right half */
+    }
+
+    height: 100vh;
+    overflow: hidden;
+}
+
+.left-half img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 200%;
+    height: 100%;
+    object-fit: cover;
+    clip-path: inset(0 50% 0 0);
+    /* Show left half */
+}
+
+/* Right half of the image */
+.right-half {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.right-half img {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 200%;
+    height: 100%;
+    object-fit: cover;
+    clip-path: inset(0 0 0 50%);
+    /* Show right half */
+}

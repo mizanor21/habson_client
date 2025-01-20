@@ -1,0 +1,47 @@
+.marquee-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.marquee-content {
+  display: flex;
+  flex-wrap: nowrap;
+  animation: scroll 30s linear infinite;
+}
+
+.marquee-content.reverse {
+  animation-direction: reverse;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-200%);
+  }
+}
+
+@media (max-width: 768px) {
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+
+    100% {
+      transform: translateX(-200%);
+    }
+  }
+  .marquee-content {
+    display: flex;
+    flex-wrap: nowrap;
+    animation: scroll 10s linear infinite;
+  }
+}
+
+.marquee-content > * {
+  flex: 0 0 auto;
+  margin-right: 20px;
+}
