@@ -89,10 +89,10 @@ const ContactUsRightPart = () => {
           We are looking forward to collaborating with you! Kindly send us an
           email with your details and requirements to
           <a
-            href="mailto:life@living-brands.co"
+            href="mailto:life@habson.co"
             className="text-[#127acc] hover:underline ml-1"
           >
-            life@living-brands.co
+            life@habson.co
           </a>
         </p>
         <p className="text-[16px] text-[#1f2937] my-2">

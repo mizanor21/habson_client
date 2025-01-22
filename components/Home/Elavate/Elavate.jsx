@@ -70,12 +70,7 @@ const Elevate = ({ data }) => {
                 {data?.shortDescription}
               </p>
               <div className="mt-5">
-                <Link
-                  href={
-                    "https://www.google.com/maps/place/Living+Brands/@23.7843436,90.3953062,17z/data=!3m1!4b1!4m6!3m5!1s0x3755c700426d1655:0x8a70d2c34d6aae47!8m2!3d23.7843436!4d90.3953062!16s%2Fg%2F11y5gz5c5_?entry=ttu"
-                  }
-                  target="_blank"
-                >
+                <Link href={"/contact"}>
                   <div
                     className="btn-posnawr max-w-[250px] relative flex justify-center items-center gap-2 rounded-full py-4 px-8 text-center text-lg text-[#127acc] border-2 border-transparent hover:border-white bg-white hover:text-white z-[20] overflow-hidden transition-colors duration-300 ease-in-out"
                     onMouseEnter={handleMouseEnter}
