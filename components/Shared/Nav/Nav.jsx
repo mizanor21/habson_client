@@ -1,6 +1,5 @@
 "use client";
 import { RiArrowDropDownLine } from "react-icons/ri";
-import { ImCancelCircle } from "react-icons/im";
 import React, { useState } from "react";
 import "./Nav.css";
 import Link from "next/link";
@@ -146,7 +145,9 @@ const Nav = () => {
                   "Media",
                   "Production",
                   "Influencer",
-                  "Talent Management",
+                  "Talent management",
+                  "Event Management",
+                  "Experiential Marketing",
                   "IT",
                   "UI/UX",
                   "SEO",
@@ -491,15 +492,15 @@ const Nav = () => {
         <div className="navber-logo z-[210] pt-10 md:pt-0 max-[991px]:hidden">
           <div className="">
             <div className="w-[100%]">
-              <div className={`flex items-end gap-[5px] text-[#127acc]`}>
+              <div className={`flex gap-[5px] text-[#127acc]`}>
                 <Link href="/" onClick={() => handleNavigations("/")}>
                   <Image
                     src={logo}
-                    className="w-10 lg:w-11 xl:w-14 "
+                    className="w-16 lg:w-[150px] xl:w-[200px] "
                     alt="Living Brands logo"
                   ></Image>
                 </Link>
-                <h1 className="rounded-full bg-[#127acc] w-[5px] h-[5px] lg:w-[7px] lg:h-[7px] animate-pulse font-bold mb-[14px] 2xl:mb-[17px]"></h1>
+                <h1 className="rounded-full bg-[#127acc] w-[5px] h-[5px] lg:w-[7px] lg:h-[7px] animate-pulse font-bold mt-5"></h1>
 
                 <WordRotate
                   className="text-[11px] xl:text-[13px] 2xl:text-lg  font-[600] p-0 m-0 w-full"
@@ -509,7 +510,9 @@ const Nav = () => {
                     "Media",
                     "Production",
                     "Influencer",
-                    "Talent Management",
+                    "Talent management",
+                    "Event Management",
+                    "Experiential Marketing",
                     "IT",
                     "UI/UX",
                     "SEO",
