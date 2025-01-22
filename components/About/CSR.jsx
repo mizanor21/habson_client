@@ -16,8 +16,7 @@ const CSR = () => {
 
       <div className="py-5 w-[100%] mx-auto text-[15px]">
         <h2 className="font-bold text-[20px] md:text-[34px] text-[#127acc] my-5 lg:hidden">
-          LIVING BRANDS DIGITAL SOLUTIONS PRIVATE LIMITED (“LIVING BRANDS”) CSR
-          POLICY
+          Habson DIGITAL SOLUTIONS PRIVATE LIMITED (“Habson”) CSR POLICY
         </h2>
         <h3>
           1. <span className=" font-bold mb-4">Preface</span>{" "}

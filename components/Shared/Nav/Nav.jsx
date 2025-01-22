@@ -141,11 +141,7 @@ const Nav = () => {
           >
             {/* Logo Section */}
             <Link href="/" className="w-[100%] flex items-center gap-2">
-              <Image
-                src={logo}
-                className="w-[100px]"
-                alt="Living Brands logo"
-              ></Image>
+              <Image src={logo} className="w-[100px]" alt="Habson logo"></Image>
               <h1 className="animate-pulse rounded-full bg-[#127acc] w-[5px] h-[5px]"></h1>
               <WordRotate
                 className="text-[12px] md:text-lg text-[#127acc] font-[600] p-0 m-0 w-full"
@@ -508,7 +504,7 @@ const Nav = () => {
                 <Image
                   src={logo}
                   className="w-[100px] lg:w-[120px] xl:w-[150px] "
-                  alt="Living Brands logo"
+                  alt="Habson logo"
                 ></Image>
               </Link>
               <h1 className="rounded-full bg-[#127acc] w-[5px] h-[5px] 2xl:w-[7px] 2xl:h-[7px] animate-pulse font-bold mb-[3px] 2xl:mb-[5xp]"></h1>
@@ -604,7 +600,7 @@ const Nav = () => {
                       </div>
                       <React.Fragment>
                         {caseStudyData.map((item, index) => (
-                          <a
+                          <Link
                             href={`/works/${item._id}`}
                             key={index}
                             className="card cursor-pointer"
@@ -622,7 +618,7 @@ const Nav = () => {
                             <p className="font-[400] md:text-[14px] min-[1500px]:text-[15px] min-[1600px]:text-[16px] min-[1700px]:text-[17px] min-[1800px]:text-[19px] mt-2">
                               {item.detailsTitle}
                             </p>
-                          </a>
+                          </Link>
                         ))}
                       </React.Fragment>
                     </div>

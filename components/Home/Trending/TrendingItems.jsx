@@ -16,7 +16,7 @@ const TrendingItems = () => {
       link: "works/6738ac74167e8afc78d608d1",
       category: "Business",
       title:
-        "Living Brands, Bangladesh Largest Independent Agency, Cements Its Status as a Global Challenger with European Expansion and Acquisition of Amsterdam’s Hottest Design Agency, Addikt",
+        "Habson, Bangladesh Largest Independent Agency, Cements Its Status as a Global Challenger with European Expansion and Acquisition of Amsterdam’s Hottest Design Agency, Addikt",
       photo: "https://i.postimg.cc/QtJh1msG/bh3vptdTO4U-HD.jpg",
       date: "2024-12-09T12:00:00Z",
     },

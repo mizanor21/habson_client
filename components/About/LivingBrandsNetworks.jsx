@@ -17,7 +17,7 @@ const LivingBrandsNetworks = ({ shortDescription, items, brand }) => {
         {/* Left Side */}
         <div>
           <h2 className="text-3xl md:text-4xl lg:text-[48px] text-[#127acc] leading-[1.1] lg:leading-[1.2] font-bold mb-7 md:mb-10 transition duration-300 ease-in-out transform">
-            Living Brands Network & Partnerships
+            Habson Network & Partnerships
           </h2>
 
           <p className="text-[18px] font-normal text-gray-800 mb-5 transition duration-300 ease-in-out">

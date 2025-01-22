@@ -60,7 +60,7 @@ const TimeSchbang = () => {
                   WebkitTextStroke: "1px #127acc",
                 }}
               >
-                IT&apos;S TIME TO CREATE A LIVING BRANDS
+                IT&apos;S TIME TO CREATE A Habson
               </h1>
             </React.Fragment>
           ))}
@@ -81,7 +81,7 @@ const TimeSchbang = () => {
                   WebkitTextStroke: "1px #127acc",
                 }}
               >
-                IT&apos;S TIME TO CREATE A LIVING BRANDS
+                IT&apos;S TIME TO CREATE A Habson
               </h1>
             </React.Fragment>
           ))}
