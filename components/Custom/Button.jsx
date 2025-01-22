@@ -45,7 +45,7 @@ const ButtonEffect = ({ children }) => {
 
   return (
     <div
-      className="btn-posnawr relative flex justify-center items-center gap-2 rounded-full px-2 lg:px-[30px] xl:px-[27.4px] 2xl:px-9 py-[11px] xl:py-[10.3px] 2xl:py-[16.8px] text-center text-lg text-white border-2 border-transparent hover:border-[#115c5c] bg-[#115c5c] hover:text-[#115c5c] z-[20] overflow-hidden transition-colors duration-1000 ease-in-out"
+      className="btn-posnawr relative flex justify-center items-center gap-2 rounded-full px-2 lg:px-[30px] xl:px-[27.4px] 2xl:px-9 py-[11px] xl:py-[10.3px] 2xl:py-[16.8px] text-center text-lg text-white border-2 border-transparent hover:border-[#127acc] bg-[#127acc] hover:text-[#127acc] z-[20] overflow-hidden transition-colors duration-1000 ease-in-out"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
