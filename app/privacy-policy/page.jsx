@@ -4,7 +4,7 @@ const PrivacyPolicy = () => {
   return (
     <div className="px-[5%] py-10 lg:py-20 md:pb-10 bg-white relative z-[110] rounded-b-[20px] lg:rounded-b-[40px] font-sora">
       {/* Title */}
-      <h1 className="text-[#135c5c] text-3xl lg:text-[48px] font-bold text-center mb-10 lg:mb-32">
+      <h1 className="text-[#127acc] text-3xl lg:text-[48px] font-bold text-center mb-10 lg:mb-32">
         Terms & Privacy Policy
       </h1>
 
@@ -12,7 +12,7 @@ const PrivacyPolicy = () => {
       <div className="space-y-10 text-base lg:text-lg leading-relaxed">
         {/* Section 1 */}
         <div>
-          <h2 className="text-[22px] font-[600]  mb-3 text-[#135c5c]">
+          <h2 className="text-[22px] font-[600]  mb-3 text-[#127acc]">
             We are committed to protecting your privacy
           </h2>
           <p className="text-[16px]">
@@ -26,7 +26,7 @@ const PrivacyPolicy = () => {
 
         {/* Section 2 */}
         <div>
-          <h2 className="text-[22px] font-[600]  mb-3 text-[#135c5c]">
+          <h2 className="text-[22px] font-[600]  mb-3 text-[#127acc]">
             Information Collected
           </h2>
           <p className="text-[16px]">
@@ -41,7 +41,7 @@ const PrivacyPolicy = () => {
 
         {/* Section 3 */}
         <div>
-          <h2 className="text-[22px] font-[600]  mb-3 text-[#135c5c]">
+          <h2 className="text-[22px] font-[600]  mb-3 text-[#127acc]">
             Information Use
           </h2>
           <p className="text-[16px]">
@@ -56,7 +56,7 @@ const PrivacyPolicy = () => {
 
         {/* Section 4 */}
         <div>
-          <h2 className="text-[22px] font-[600]  mb-3 text-[#135c5c]">
+          <h2 className="text-[22px] font-[600]  mb-3 text-[#127acc]">
             Cookies
           </h2>
           <p className="text-[16px]">
@@ -71,7 +71,7 @@ const PrivacyPolicy = () => {
 
         {/* Section 5 */}
         <div>
-          <h2 className="text-[22px] font-[600]  mb-3 text-[#135c5c]">
+          <h2 className="text-[22px] font-[600]  mb-3 text-[#127acc]">
             Disclosing Information
           </h2>
           <p className="text-[16px]">
@@ -87,7 +87,7 @@ const PrivacyPolicy = () => {
 
         {/* Section 6 */}
         <div>
-          <h2 className="text-[22px] font-[600]  mb-3 text-[#135c5c]">
+          <h2 className="text-[22px] font-[600]  mb-3 text-[#127acc]">
             Changes to this Policy
           </h2>
           <p className="text-[16px]">
@@ -102,7 +102,7 @@ const PrivacyPolicy = () => {
 
         {/* Section 7 */}
         <div>
-          <h2 className="text-[22px] font-[600]  mb-3 text-[#135c5c]">
+          <h2 className="text-[22px] font-[600]  mb-3 text-[#127acc]">
             Contacting Us
           </h2>
           <p className="text-[16px]">

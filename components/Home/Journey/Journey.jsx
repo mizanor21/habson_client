@@ -3,12 +3,14 @@ import Link from "next/link";
 import { MdOutlineArrowRightAlt } from "react-icons/md";
 import React, { useEffect } from "react";
 import Image from "next/image";
+import journeyBg from "@/public/assets/home/cta-2-bg.png";
+import round from "@/public/assets/home/cta-round.png";
 
 const Journey = ({ data }) => {
   const styles = {
     display: "flex",
     justifyContent: "center",
-    backgroundImage: `url('https://i.postimg.cc/y8X6x0BD/cta-2-bg.png')`,
+    backgroundImage: `url('${journeyBg.src}')`,
     backgroundSize: "cover", // Adjust based on your preference
     backgroundPosition: "center", // Adjust based on your preference
   };
@@ -99,7 +101,7 @@ const Journey = ({ data }) => {
                 width={200}
                 height={200}
                 className="w-44 md:max-w-60 mt-5 md:mt-5 "
-                src="https://i.postimg.cc/fRhTM844/cta-round.png"
+                src={round}
                 alt=""
               />
             </h2>

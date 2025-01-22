@@ -85,12 +85,12 @@ const Footer = () => {
       {/* Footer Links and Info */}
       <footer className="footer block lg:flex lg:justify-between border-t border-gray-400 px-5 py-4 text-white justify-center items-center">
         {/* Social Links */}
-        <div className="flex justify-center items-center gap-3 text-3xl w-full">
+        <div className="flex justify-center items-center gap-3 text-3xl w-full rounded-full">
           <Link
-            href="https://www.facebook.com/Livingbrands.co"
+            href="https://www.facebook.com/Habsonltd"
             target="_blank"
             rel="noopener noreferrer"
-            className="transition-transform duration-300 ease-in-out transform hover:scale-125 hover:text-blue-600"
+            className="transition-transform duration-300 ease-in-out transform hover:scale-125 hover:text-blue-800"
           >
             <FaFacebook />
           </Link>
@@ -111,7 +111,7 @@ const Footer = () => {
             <FaYoutube />
           </Link>
           <Link
-            href="https://www.linkedin.com/company/livingbrandsbyhabson/"
+            href="https://www.linkedin.com/company/habsonltd"
             target="_blank"
             rel="noopener noreferrer"
             className="transition-transform duration-300 ease-in-out transform hover:scale-125 hover:text-blue-700"

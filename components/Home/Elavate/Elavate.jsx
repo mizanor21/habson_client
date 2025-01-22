@@ -2,12 +2,13 @@
 import Link from "next/link";
 import { MdOutlineArrowRightAlt } from "react-icons/md";
 import React, { useEffect } from "react";
+import elavateBg from "@/public/assets/home/cta-bg.png";
 
 const Elevate = ({ data }) => {
   const styles = {
     display: "flex",
     justifyContent: "center",
-    backgroundImage: `url("https://i.postimg.cc/5NVmLML6/cta-bg.png")`,
+    backgroundImage: `url("${elavateBg.src}")`,
     backgroundSize: "cover", // Adjust based on your preference
     backgroundPosition: "center",
     height: "", // Adjust based on your preference
