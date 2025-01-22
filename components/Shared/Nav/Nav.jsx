@@ -133,12 +133,12 @@ const Nav = () => {
             <Link href="/" className="w-[100%] flex items-center gap-2">
               <Image
                 src={logo}
-                className="w-[40px]"
+                className="w-[100px]"
                 alt="Living Brands logo"
               ></Image>
               <h1 className="animate-pulse rounded-full bg-[#127acc] w-[5px] h-[5px]"></h1>
               <WordRotate
-                className="text-sm md:text-lg font-[600] p-0 m-0 w-full"
+                className="text-[12px] md:text-lg text-[#127acc] font-[600] p-0 m-0 w-full"
                 words={[
                   "Brands",
                   "Tech",
@@ -488,255 +488,340 @@ const Nav = () => {
             </li>
           </div>
         </div>
-        {/* Logo */}
-        <div className="navber-logo z-[210] pt-10 md:pt-0 max-[991px]:hidden">
-          <div className="">
-            <div className="w-[100%]">
-              <div className={`flex gap-[5px] text-[#127acc]`}>
-                <Link href="/" onClick={() => handleNavigations("/")}>
-                  <Image
-                    src={logo}
-                    className="w-16 lg:w-[150px] xl:w-[200px] "
-                    alt="Living Brands logo"
-                  ></Image>
-                </Link>
-                <h1 className="rounded-full bg-[#127acc] w-[5px] h-[5px] lg:w-[7px] lg:h-[7px] animate-pulse font-bold mt-5"></h1>
-
-                <WordRotate
-                  className="text-[11px] xl:text-[13px] 2xl:text-lg  font-[600] p-0 m-0 w-full"
-                  words={[
-                    "Brands",
-                    "Tech",
-                    "Media",
-                    "Production",
-                    "Influencer",
-                    "Talent management",
-                    "Event Management",
-                    "Experiential Marketing",
-                    "IT",
-                    "UI/UX",
-                    "SEO",
-                    "Chatbots",
-                  ]}
-                />
-              </div>
-            </div>
-          </div>
-        </div>
 
         {/* Main Nav Links */}
-        <div className=" navber-links text-[#127acc] font-sora font-[500] text-[14px] h-full">
-          <ul className="flex justify-center items-center gap-5 lg:gap-8 xl:gap-14 2xl:gap-16">
-            <li className={`${pathname === "/work" && "text-[#ee4580]"}`}>
-              <Link href="/works" className="link">
-                Works
+        <div className="flex justify-between gap-7 w-full items-center text-[#127acc] font-sora font-[500] text-[14px] h-full pt-7 max-[991px]:hidden">
+          {/* Logo */}
+          <div className="navber-logo z-[210]  ">
+            <div className={`flex items-end gap-[5px] text-[#127acc]`}>
+              <Link href="/" onClick={() => handleNavigations("/")}>
+                <Image
+                  src={logo}
+                  className="w-[100px] lg:w-[120px] xl:w-[150px] "
+                  alt="Living Brands logo"
+                ></Image>
               </Link>
-            </li>
-            <li
-              className={`group flex items-center justify-center cursor-pointer `}
-            >
-              <p className="link  ">Solutions</p>
-              {/* Add transition and transform to the icon */}
-              <RiArrowDropDownLine
-                className={`text-5xl dropdown-icon transform transition-transform duration-300 ease-in-out group-hover:rotate-180`}
+              <h1 className="rounded-full bg-[#127acc] w-[5px] h-[5px] 2xl:w-[7px] 2xl:h-[7px] animate-pulse font-bold mb-[3px] 2xl:mb-[5xp]"></h1>
+
+              <WordRotate
+                className="text-[11px] xl:text-[13px] 2xl:text-[16px]  font-[600] p-0 m-0 w-full"
+                words={[
+                  "Brands",
+                  "Tech",
+                  "Media",
+                  "Production",
+                  "Influencer",
+                  "Talent management",
+                  "Event Management",
+                  "Experiential Marketing",
+                  "IT",
+                  "UI/UX",
+                  "SEO",
+                  "Chatbots",
+                ]}
               />
-
-              <div
-                className={`overflow-hidden absolute top-full left-0 h-0 group-hover:h-[60vh] bg-white w-screen invisible 
-      transition-all duration-700 border-b border-black group-hover:visible`}
+            </div>
+          </div>
+          <div className="flex items-center gap-5">
+            <ul className="flex justify-center items-center gap-5 lg:gap-8 xl:gap-14 2xl:gap-16 list-none no-underline">
+              <li className={`${pathname === "/work" && "text-[#ee4580]"}`}>
+                <Link href="/works" className="link no-underline">
+                  Works
+                </Link>
+              </li>
+              <li
+                className={`group flex items-center justify-center cursor-pointer `}
               >
-                <div className=" w-full h-full z-[115] ">
-                  <div className="h-full flex justify-between  gap-5 px-[5%] pt-5 pb-10 lg:pb-64 ">
-                    <div className="min-w-72  solutions">
-                      <h2 className="mb-4">
-                        <a
-                          href={"/brand-solutions"}
-                          className={`text-2xl lg:text-[30px] font-[600] ${
-                            pathname === "/brand-solutions"
-                              ? "text-[#ee4580]"
-                              : ""
-                          }`}
-                        >
-                          Brand Solution
-                        </a>
-                      </h2>
-                      <h2 className="mb-4">
-                        <a
-                          href={"media-solutions"}
-                          className={`text-2xl lg:text-[30px] font-[600] ${
-                            pathname === "/media-solutions"
-                              ? "text-[#ee4580]"
-                              : ""
-                          }`}
-                        >
-                          Media Solution
-                        </a>
-                      </h2>
-                      <h2>
-                        <a
-                          href={"tech-solutions"}
-                          className={`text-2xl lg:text-[30px] font-[600] ${
-                            pathname === "/tech-solutions"
-                              ? "text-[#ee4580]"
-                              : ""
-                          }`}
-                        >
-                          Tech Solution
-                        </a>
-                      </h2>
-                    </div>
-                    <React.Fragment>
-                      {caseStudyData.map((item, index) => (
-                        <a
-                          href={`/works/${item._id}`}
-                          key={index}
-                          onMouseMove={(e) => handleMouseMove(e, item?.id)}
-                          onMouseLeave={handleMouseLeave}
-                          className={`card cursor-pointer`}
-                        >
-                          <div className="card_image">
-                            <Image
-                              className="rounded-2xl "
-                              src={item?.img}
-                              alt={index}
-                              width={700}
-                              height={500}
-                            />
-                          </div>
-                          <p className="font-[400] md:text-[14px] min-[1500px]:text-[15px] min-[1600px]:text-[16px] min-[1700px]:text-[17px] min-[1800px]:text-[19px] mt-2">
-                            {item?.detailsTitle}
-                          </p>
+                <p className="link  no-underline">Solutions</p>
+                {/* Add transition and transform to the icon */}
+                <RiArrowDropDownLine
+                  className={`text-2xl xl:text-3xl 2xl:text-4xl dropdown-icon transform transition-transform duration-300 ease-in-out group-hover:rotate-180`}
+                />
 
-                          <style>{keyframes}</style>
-
-                          {hoveredId === item.id && ( // Show the small div only if hoveredId matches the card id
-                            <div
-                              className="w-36 h-10 fixed z-[100]"
-                              style={{
-                                top: `${position.y - 30}px`,
-                                left: `${position.x}px`,
-                                pointerEvents: "none",
-                                transform: "translate(-50%, -50%)", // Center under the mouse
-                              }}
-                            >
-                              <div className="bg-[#127acc] text-white overflow-hidden w-full h-full rounded-full flex justify-center items-center relative">
-                                <p style={scrollAnimation}>View Case study</p>
-                              </div>
+                <div
+                  className={`overflow-hidden absolute top-full left-0 h-0 group-hover:h-[60vh] bg-white w-screen invisible 
+      transition-all duration-700 border-b border-black group-hover:visible`}
+                >
+                  <div className=" w-full h-full z-[115] ">
+                    <div className="h-full flex justify-between  gap-5 px-[5%] pt-5 pb-10 lg:pb-64 ">
+                      <div className="min-w-72  solutions">
+                        <h2 className="mb-4">
+                          <a
+                            href={"/brand-solutions"}
+                            className={`text-2xl lg:text-[30px] font-[600] ${
+                              pathname === "/brand-solutions"
+                                ? "text-[#ee4580]"
+                                : ""
+                            }`}
+                          >
+                            Brand Solution
+                          </a>
+                        </h2>
+                        <h2 className="mb-4">
+                          <a
+                            href={"media-solutions"}
+                            className={`text-2xl lg:text-[30px] font-[600] ${
+                              pathname === "/media-solutions"
+                                ? "text-[#ee4580]"
+                                : ""
+                            }`}
+                          >
+                            Media Solution
+                          </a>
+                        </h2>
+                        <h2>
+                          <a
+                            href={"tech-solutions"}
+                            className={`text-2xl lg:text-[30px] font-[600] ${
+                              pathname === "/tech-solutions"
+                                ? "text-[#ee4580]"
+                                : ""
+                            }`}
+                          >
+                            Tech Solution
+                          </a>
+                        </h2>
+                      </div>
+                      <React.Fragment>
+                        {caseStudyData.map((item, index) => (
+                          <a
+                            href={`/works/${item._id}`}
+                            key={index}
+                            onMouseMove={(e) => handleMouseMove(e, item?.id)}
+                            onMouseLeave={handleMouseLeave}
+                            className={`card cursor-pointer`}
+                          >
+                            <div className="card_image">
+                              <Image
+                                className="rounded-2xl "
+                                src={item?.img}
+                                alt={index}
+                                width={700}
+                                height={500}
+                              />
                             </div>
-                          )}
-                        </a>
-                      ))}
-                    </React.Fragment>
+                            <p className="font-[400] md:text-[14px] min-[1500px]:text-[15px] min-[1600px]:text-[16px] min-[1700px]:text-[17px] min-[1800px]:text-[19px] mt-2">
+                              {item?.detailsTitle}
+                            </p>
+
+                            <style>{keyframes}</style>
+
+                            {hoveredId === item.id && ( // Show the small div only if hoveredId matches the card id
+                              <div
+                                className="w-36 h-10 fixed z-[100]"
+                                style={{
+                                  top: `${position.y - 30}px`,
+                                  left: `${position.x}px`,
+                                  pointerEvents: "none",
+                                  transform: "translate(-50%, -50%)", // Center under the mouse
+                                }}
+                              >
+                                <div className="bg-[#127acc] text-white overflow-hidden w-full h-full rounded-full flex justify-center items-center relative">
+                                  <p style={scrollAnimation}>View Case study</p>
+                                </div>
+                              </div>
+                            )}
+                          </a>
+                        ))}
+                      </React.Fragment>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </li>
+              </li>
 
-            <li
-              className={` group flex items-center justify-center cursor-pointer`}
-            >
-              <p className="link">About</p>
-              <RiArrowDropDownLine
-                className={`text-5xl dropdown-icon transform transition-transform duration-300 ease-in-out group-hover:rotate-180`}
-              />
-              <div
-                className="overflow-hidden absolute top-full left-0 h-0 group-hover:h-[60vh] bg-white w-screen invisible 
-      transition-all duration-700 border-b border-black group-hover:visible"
+              <li
+                className={` group flex items-center justify-center cursor-pointer`}
               >
-                <div className=" w-full h-full   z-[115] ">
-                  <div className="h-full flex justify-between gap-5 px-[5%] pt-5 pb-10 lg:pb-64">
-                    <div className="min-w-72  solutions">
-                      <h2 className="mb-4">
-                        <a
-                          href={"/who-we-are"}
-                          className={`text-2xl lg:text-[30px] font-[600] ${
-                            pathname === "/who-we-are" ? "text-[#ee4580]" : ""
-                          }`}
-                        >
-                          Who We Are
-                        </a>
-                      </h2>
-                      <h2 className="mb-4">
-                        <a
-                          href={"we-works"}
-                          className={`text-2xl lg:text-[30px] font-[600] ${
-                            pathname === "/we-works" ? "text-[#ee4580]" : ""
-                          }`}
-                        >
-                          How We Work
-                        </a>
-                      </h2>
-                      <h2 className="mb-4">
-                        <a
-                          href={"partnership"}
-                          className={`text-2xl lg:text-[30px] font-[600] ${
-                            pathname === "/partnership" ? "text-[#ee4580]" : ""
-                          }`}
-                        >
-                          Our Partnership
-                        </a>
-                      </h2>
-                      <h2 className="mb-4">
-                        <a
-                          href={"achievements"}
-                          className={`text-2xl lg:text-[30px] font-[600] ${
-                            pathname === "/achievements" ? "text-[#ee4580]" : ""
-                          }`}
-                        >
-                          Achievements
-                        </a>
-                      </h2>
-                      <h2 className="mb-4">
-                        <a
-                          href={"/news-center"}
-                          className={`text-2xl lg:text-[30px] font-[600] ${
-                            pathname === "/news-center" ? "text-[#ee4580]" : ""
-                          }`}
-                        >
-                          News Center
-                        </a>
-                      </h2>
+                <p className="link no-underline">About</p>
+                <RiArrowDropDownLine
+                  className={`text-2xl xl:text-3xl 2xl:text-4xl dropdown-icon transform transition-transform duration-300 ease-in-out group-hover:rotate-180`}
+                />
+                <div
+                  className="overflow-hidden absolute top-full left-0 h-0 group-hover:h-[60vh] bg-white w-screen invisible 
+      transition-all duration-700 border-b border-black group-hover:visible"
+                >
+                  <div className=" w-full h-full   z-[115] ">
+                    <div className="h-full flex justify-between gap-5 px-[5%] pt-5 pb-10 lg:pb-64">
+                      <div className="min-w-72  solutions">
+                        <h2 className="mb-4">
+                          <a
+                            href={"/who-we-are"}
+                            className={`text-2xl lg:text-[30px] font-[600] ${
+                              pathname === "/who-we-are" ? "text-[#ee4580]" : ""
+                            }`}
+                          >
+                            Who We Are
+                          </a>
+                        </h2>
+                        <h2 className="mb-4">
+                          <a
+                            href={"we-works"}
+                            className={`text-2xl lg:text-[30px] font-[600] ${
+                              pathname === "/we-works" ? "text-[#ee4580]" : ""
+                            }`}
+                          >
+                            How We Work
+                          </a>
+                        </h2>
+                        <h2 className="mb-4">
+                          <a
+                            href={"partnership"}
+                            className={`text-2xl lg:text-[30px] font-[600] ${
+                              pathname === "/partnership"
+                                ? "text-[#ee4580]"
+                                : ""
+                            }`}
+                          >
+                            Our Partnership
+                          </a>
+                        </h2>
+                        <h2 className="mb-4">
+                          <a
+                            href={"achievements"}
+                            className={`text-2xl lg:text-[30px] font-[600] ${
+                              pathname === "/achievements"
+                                ? "text-[#ee4580]"
+                                : ""
+                            }`}
+                          >
+                            Achievements
+                          </a>
+                        </h2>
+                        <h2 className="mb-4">
+                          <a
+                            href={"/news-center"}
+                            className={`text-2xl lg:text-[30px] font-[600] ${
+                              pathname === "/news-center"
+                                ? "text-[#ee4580]"
+                                : ""
+                            }`}
+                          >
+                            News Center
+                          </a>
+                        </h2>
 
-                      <h2 className="mb-4">
-                        <a
-                          href={"/living-brands-networks"}
-                          className={`text-2xl lg:text-[30px] font-[600] ${
-                            pathname === "/living-brands-networks"
-                              ? "text-[#ee4580]"
-                              : ""
-                          }`}
-                        >
-                          Living Networks
-                        </a>
-                      </h2>
+                        <h2 className="mb-4">
+                          <a
+                            href={"/living-brands-networks"}
+                            className={`text-2xl lg:text-[30px] font-[600] ${
+                              pathname === "/living-brands-networks"
+                                ? "text-[#ee4580]"
+                                : ""
+                            }`}
+                          >
+                            Living Networks
+                          </a>
+                        </h2>
 
-                      <h2 className="mb-4">
-                        <a
-                          href={"/csr"}
-                          className={`text-2xl lg:text-[30px] font-[600] ${
-                            pathname === "/csr" ? "text-[#ee4580]" : ""
-                          }`}
-                        >
-                          CSR
-                        </a>
-                      </h2>
+                        <h2 className="mb-4">
+                          <a
+                            href={"/csr"}
+                            className={`text-2xl lg:text-[30px] font-[600] ${
+                              pathname === "/csr" ? "text-[#ee4580]" : ""
+                            }`}
+                          >
+                            CSR
+                          </a>
+                        </h2>
 
-                      <h2 className="mb-4">
-                        <a
-                          href={"meet-our-team"}
-                          className={`text-2xl lg:text-[30px] font-[600] ${
-                            pathname === "/meet-our-team"
-                              ? "text-[#ee4580]"
-                              : ""
-                          }`}
-                        >
-                          Meet The Team
-                        </a>
-                      </h2>
+                        <h2 className="mb-4">
+                          <a
+                            href={"meet-our-team"}
+                            className={`text-2xl lg:text-[30px] font-[600] ${
+                              pathname === "/meet-our-team"
+                                ? "text-[#ee4580]"
+                                : ""
+                            }`}
+                          >
+                            Meet The Team
+                          </a>
+                        </h2>
+                      </div>
+
+                      <React.Fragment>
+                        {dailyCreativityData.map((item, index) => (
+                          <a
+                            href={`/works/${item._id}`}
+                            key={index}
+                            onMouseMove={(e) => handleMouseMove(e, item.id)}
+                            onMouseLeave={handleMouseLeave}
+                            className={`card cursor-pointer text-lg`}
+                          >
+                            <div className="card_image ">
+                              <Image
+                                className="rounded-2xl "
+                                src={item?.img}
+                                alt={item?.title}
+                                width={700}
+                                height={300}
+                              />
+                            </div>
+
+                            <p className="font-[400] md:text-[14px] min-[1500px]:text-[15px] min-[1600px]:text-[16px] min-[1700px]:text-[17px] min-[1800px]:text-[19px] mt-2">
+                              {item?.title}
+                            </p>
+
+                            <style>{keyframes}</style>
+
+                            {hoveredId === item.id && ( // Show the small div only if hoveredId matches the card id
+                              <div
+                                className="w-36 h-10 fixed z-[100]"
+                                style={{
+                                  top: `${position.y - 30}px`,
+                                  left: `${position.x}px`,
+                                  pointerEvents: "none",
+                                  transform: "translate(-50%, -50%)", // Center under the mouse
+                                }}
+                              >
+                                <div className="bg-[#127acc] text-white overflow-hidden w-full h-full rounded-full flex justify-center items-center relative">
+                                  <p style={scrollAnimation}>View Case study</p>
+                                </div>
+                              </div>
+                            )}
+                          </a>
+                        ))}
+                      </React.Fragment>
                     </div>
+                  </div>
+                </div>
+              </li>
 
-                    <React.Fragment>
-                      {dailyCreativityData.map((item, index) => (
+              <li
+                className={` group flex items-center justify-center cursor-pointer h-16`}
+              >
+                <p className="link no-underline">Resources</p>
+                <RiArrowDropDownLine
+                  className={`text-2xl xl:text-3xl 2xl:text-4xl dropdown-icon transform transition-transform duration-300 ease-in-out group-hover:rotate-180`}
+                />
+                <div
+                  className="overflow-hidden absolute top-full left-0 h-0 group-hover:h-[60vh] bg-white w-screen invisible 
+      transition-all duration-700 border-b border-black group-hover:visible"
+                >
+                  <div className="  w-full h-full z-[115] ">
+                    <div className=" h-full flex justify-between gap-5 px-[5%] pt-5 pb-10 lg:pb-64 ">
+                      <div className="min-w-72 ">
+                        <h2 className="mb-4">
+                          <a
+                            href={"/blogs"}
+                            className={`text-2xl lg:text-[30px] font-[600] ${
+                              pathname === "/blogs" ? "text-[#ee4580]" : ""
+                            }`}
+                          >
+                            Blogs
+                          </a>
+                        </h2>
+                        <h2 className="mb-4">
+                          <a
+                            href={"the-edge"}
+                            className={`text-2xl lg:text-[30px] font-[600] ${
+                              pathname === "/the-edge" ? "text-[#ee4580]" : ""
+                            }`}
+                          >
+                            The Edge
+                          </a>
+                        </h2>
+                      </div>
+                      {resourcesData.map((item, index) => (
                         <a
                           href={`/works/${item._id}`}
                           key={index}
@@ -744,13 +829,13 @@ const Nav = () => {
                           onMouseLeave={handleMouseLeave}
                           className={`card cursor-pointer text-lg`}
                         >
-                          <div className="card_image ">
+                          <div className="card_image">
                             <Image
                               className="rounded-2xl "
                               src={item?.img}
                               alt={item?.title}
                               width={700}
-                              height={300}
+                              height={500}
                             />
                           </div>
 
@@ -771,120 +856,39 @@ const Nav = () => {
                               }}
                             >
                               <div className="bg-[#127acc] text-white overflow-hidden w-full h-full rounded-full flex justify-center items-center relative">
-                                <p style={scrollAnimation}>View Case study</p>
+                                <p style={scrollAnimation}>View Blog</p>
                               </div>
                             </div>
                           )}
                         </a>
                       ))}
-                    </React.Fragment>
-                  </div>
-                </div>
-              </div>
-            </li>
-
-            <li
-              className={` group flex items-center justify-center cursor-pointer h-16`}
-            >
-              <p className="link">Resources</p>
-              <RiArrowDropDownLine
-                className={`text-5xl dropdown-icon transform transition-transform duration-300 ease-in-out group-hover:rotate-180`}
-              />
-              <div
-                className="overflow-hidden absolute top-full left-0 h-0 group-hover:h-[60vh] bg-white w-screen invisible 
-      transition-all duration-700 border-b border-black group-hover:visible"
-              >
-                <div className="  w-full h-full z-[115] ">
-                  <div className=" h-full flex justify-between gap-5 px-[5%] pt-5 pb-10 lg:pb-64 ">
-                    <div className="min-w-72 ">
-                      <h2 className="mb-4">
-                        <a
-                          href={"/blogs"}
-                          className={`text-2xl lg:text-[30px] font-[600] ${
-                            pathname === "/blogs" ? "text-[#ee4580]" : ""
-                          }`}
-                        >
-                          Blogs
-                        </a>
-                      </h2>
-                      <h2 className="mb-4">
-                        <a
-                          href={"the-edge"}
-                          className={`text-2xl lg:text-[30px] font-[600] ${
-                            pathname === "/the-edge" ? "text-[#ee4580]" : ""
-                          }`}
-                        >
-                          The Edge
-                        </a>
-                      </h2>
                     </div>
-                    {resourcesData.map((item, index) => (
-                      <a
-                        href={`/works/${item._id}`}
-                        key={index}
-                        onMouseMove={(e) => handleMouseMove(e, item.id)}
-                        onMouseLeave={handleMouseLeave}
-                        className={`card cursor-pointer text-lg`}
-                      >
-                        <div className="card_image">
-                          <Image
-                            className="rounded-2xl "
-                            src={item?.img}
-                            alt={item?.title}
-                            width={700}
-                            height={500}
-                          />
-                        </div>
-
-                        <p className="font-[400] md:text-[14px] min-[1500px]:text-[15px] min-[1600px]:text-[16px] min-[1700px]:text-[17px] min-[1800px]:text-[19px] mt-2">
-                          {item?.title}
-                        </p>
-
-                        <style>{keyframes}</style>
-
-                        {hoveredId === item.id && ( // Show the small div only if hoveredId matches the card id
-                          <div
-                            className="w-36 h-10 fixed z-[100]"
-                            style={{
-                              top: `${position.y - 30}px`,
-                              left: `${position.x}px`,
-                              pointerEvents: "none",
-                              transform: "translate(-50%, -50%)", // Center under the mouse
-                            }}
-                          >
-                            <div className="bg-[#127acc] text-white overflow-hidden w-full h-full rounded-full flex justify-center items-center relative">
-                              <p style={scrollAnimation}>View Blog</p>
-                            </div>
-                          </div>
-                        )}
-                      </a>
-                    ))}
                   </div>
                 </div>
-              </div>
-            </li>
+              </li>
 
-            <li>
+              <li>
+                <Link
+                  href="/careers"
+                  className={`${
+                    pathname === "/careers" && "text-[#ee4580]"
+                  } link no-underline`}
+                >
+                  Careers
+                </Link>
+              </li>
               <Link
-                href="/careers"
-                className={`${pathname === "/careers" && "text-[#ee4580]"}`}
+                href={"/contact"}
+                className={`${pathname === "/contact" ? "text-[#ee4580]" : ""}`}
               >
-                Careers
+                <ButtonEffect>
+                  <span className="flex gap-[6px]">
+                    Contact Us <MdOutlineArrowRightAlt className="text-xl" />
+                  </span>
+                </ButtonEffect>
               </Link>
-            </li>
-          </ul>
-          <li className="pt-7 ml-1 2xl:ml-3 list-none">
-            <Link
-              href={"/contact"}
-              className={`${pathname === "/contact" ? "text-[#ee4580]" : ""}`}
-            >
-              <ButtonEffect>
-                <span className="flex gap-[6px]">
-                  Contact Us <MdOutlineArrowRightAlt className="text-xl" />
-                </span>
-              </ButtonEffect>
-            </Link>
-          </li>
+            </ul>
+          </div>
         </div>
       </div>
     </>

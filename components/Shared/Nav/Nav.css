@@ -1,22 +1,8 @@
 .navber {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
-.navber-links {
-  display: flex;
-  gap: 30px;
-  align-items: center;
-  justify-content: center;
-}
-
-/* .navber-links ul {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 60px;
-} */
 
 .navber-links ul:hover li {
   opacity: 0.4;
@@ -32,8 +18,7 @@
   transition: all 0.3s ease;
 }
 
-.hoverArea:hover {
-}
+.hoverArea:hover {}
 
 /* Apply hover effect to all h2 elements except the one being hovered */
 .solutions h2 {
@@ -63,12 +48,6 @@
   color: inherit;
 }
 
-.navber-links ul .dropdown {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-right: -5px;
-}
 
 .navber-links ul .dropdown-icon {
   font-size: 35px;
@@ -88,7 +67,7 @@
   top: 60px;
 }
 
-.navber-links > ul li {
+.navber-links>ul li {
   /* margin-right: 0px 26px !important; */
   /* padding: 0px 26px !important; */
   /* display: block; */
