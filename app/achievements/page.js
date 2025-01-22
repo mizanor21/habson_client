@@ -1,7 +1,7 @@
-import ButtonEffect from "../button/page";
 import { MdOutlineArrowRightAlt } from "react-icons/md";
 import Link from "next/link";
 import Image from "next/image";
+import ButtonEffect from "@/components/Custom/Button";
 
 const Achievement = async () => {
   const res = await fetch("https://habson-admin.vercel.app/api/achievements", {

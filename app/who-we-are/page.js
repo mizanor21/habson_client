@@ -1,7 +1,4 @@
 import React from "react";
-import ButtonEffect from "../button/page";
-import { MdOutlineArrowRightAlt } from "react-icons/md";
-import Link from "next/link";
 import Who_We_Are from "@/components/About/Who_We_Are/Who_We_Are";
 
 const WhoWeAre = async () => {

@@ -2,11 +2,11 @@
 import React from "react";
 import "./careerdetails.css";
 import JobListings from "./JobListings";
-import ButtonEffect from "../button/page";
 import Link from "next/link";
 import Image from "next/image";
 import logo from "@/public/assets/logo/logo.png";
 import CareerDetailsLayout from "./layout";
+import ButtonEffect from "@/components/Custom/Button";
 const CareerDetails = () => {
   return (
     <div className="relative z-[110] font-sora bg-white rounded-b-[20px] lg:rounded-b-[50px] ">
