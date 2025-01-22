@@ -6,8 +6,8 @@ import Footer from "../components/Shared/Footer/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Living Brands",
-  description: "Spark Something Real. Live Your Brands with Us.",
+  title: "Habson Ltd.",
+  description: "Crafting Experiences That Unlock Brand Magic.",
 };
 
 export default function RootLayout({ children }) {
