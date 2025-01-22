@@ -17,6 +17,16 @@ import ButtonEffect from "@/components/Custom/Button";
 const Nav = () => {
   // State declarations
 
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
+  const toggleDropdown = () => {
+    setIsDropdownOpen(!isDropdownOpen);
+  };
+
+  const closeDropdown = () => {
+    setIsDropdownOpen(false);
+  };
+
   const [caseStudyData, setCaseStudyData] = useState([]);
   const [dailyCreativityData, setDailyCreativityData] = useState([]);
   const [resourcesData, setResourcesData] = useState([]);
@@ -530,56 +540,66 @@ const Nav = () => {
                 </Link>
               </li>
               <li
-                className={`group flex items-center justify-center cursor-pointer `}
+                className="group flex items-center justify-center cursor-pointer"
+                onMouseEnter={() => setIsDropdownOpen(true)} // Open dropdown on hover
+                onMouseLeave={() => setIsDropdownOpen(false)} // Close dropdown when hover ends
               >
-                <p className="link  no-underline">Solutions</p>
-                {/* Add transition and transform to the icon */}
+                <p className="link no-underline" onClick={toggleDropdown}>
+                  Solutions
+                </p>
                 <RiArrowDropDownLine
-                  className={`text-2xl xl:text-3xl 2xl:text-4xl dropdown-icon transform transition-transform duration-300 ease-in-out group-hover:rotate-180`}
+                  className={`text-2xl xl:text-3xl 2xl:text-4xl dropdown-icon transform transition-transform duration-300 ease-in-out ${
+                    isDropdownOpen ? "rotate-180" : ""
+                  }`}
                 />
 
+                {/* Dropdown content */}
                 <div
-                  className={`overflow-hidden absolute top-full left-0 h-0 group-hover:h-[60vh] bg-white w-screen invisible 
-      transition-all duration-700 border-b border-black group-hover:visible`}
+                  className={`absolute top-full left-0 w-screen bg-white border-b border-black overflow-hidden transition-all duration-700 ${
+                    isDropdownOpen ? "h-[60vh] visible" : "h-0 invisible"
+                  }`}
                 >
-                  <div className=" w-full h-full z-[115] ">
-                    <div className="h-full flex justify-between  gap-5 px-[5%] pt-5 pb-10 lg:pb-64 ">
-                      <div className="min-w-72  solutions">
+                  <div className="w-full h-full z-[115]">
+                    <div className="h-full flex justify-between gap-5 px-[5%] pt-5 pb-10 lg:pb-64">
+                      <div className="min-w-72 solutions">
                         <h2 className="mb-4">
-                          <a
-                            href={"/brand-solutions"}
+                          <Link
+                            href="/brand-solutions"
                             className={`text-2xl lg:text-[30px] font-[600] ${
                               pathname === "/brand-solutions"
                                 ? "text-[#ee4580]"
                                 : ""
                             }`}
+                            onClick={closeDropdown} // Close dropdown on click
                           >
                             Brand Solution
-                          </a>
+                          </Link>
                         </h2>
                         <h2 className="mb-4">
-                          <a
-                            href={"media-solutions"}
+                          <Link
+                            href="/media-solutions"
                             className={`text-2xl lg:text-[30px] font-[600] ${
                               pathname === "/media-solutions"
                                 ? "text-[#ee4580]"
                                 : ""
                             }`}
+                            onClick={closeDropdown} // Close dropdown on click
                           >
                             Media Solution
-                          </a>
+                          </Link>
                         </h2>
                         <h2>
-                          <a
-                            href={"tech-solutions"}
+                          <Link
+                            href="/tech-solutions"
                             className={`text-2xl lg:text-[30px] font-[600] ${
                               pathname === "/tech-solutions"
                                 ? "text-[#ee4580]"
                                 : ""
                             }`}
+                            onClick={closeDropdown} // Close dropdown on click
                           >
                             Tech Solution
-                          </a>
+                          </Link>
                         </h2>
                       </div>
                       <React.Fragment>
@@ -587,40 +607,21 @@ const Nav = () => {
                           <a
                             href={`/works/${item._id}`}
                             key={index}
-                            onMouseMove={(e) => handleMouseMove(e, item?.id)}
-                            onMouseLeave={handleMouseLeave}
-                            className={`card cursor-pointer`}
+                            className="card cursor-pointer"
+                            onClick={closeDropdown} // Close dropdown on click
                           >
                             <div className="card_image">
                               <Image
-                                className="rounded-2xl "
-                                src={item?.img}
+                                className="rounded-2xl"
+                                src={item.img}
                                 alt={index}
                                 width={700}
                                 height={500}
                               />
                             </div>
                             <p className="font-[400] md:text-[14px] min-[1500px]:text-[15px] min-[1600px]:text-[16px] min-[1700px]:text-[17px] min-[1800px]:text-[19px] mt-2">
-                              {item?.detailsTitle}
+                              {item.detailsTitle}
                             </p>
-
-                            <style>{keyframes}</style>
-
-                            {hoveredId === item.id && ( // Show the small div only if hoveredId matches the card id
-                              <div
-                                className="w-36 h-10 fixed z-[100]"
-                                style={{
-                                  top: `${position.y - 30}px`,
-                                  left: `${position.x}px`,
-                                  pointerEvents: "none",
-                                  transform: "translate(-50%, -50%)", // Center under the mouse
-                                }}
-                              >
-                                <div className="bg-[#127acc] text-white overflow-hidden w-full h-full rounded-full flex justify-center items-center relative">
-                                  <p style={scrollAnimation}>View Case study</p>
-                                </div>
-                              </div>
-                            )}
                           </a>
                         ))}
                       </React.Fragment>
