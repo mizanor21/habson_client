@@ -19,7 +19,7 @@ const Partner = () => {
   useEffect(() => {
     const fetchData = async () => {
       const res = await fetch(
-        "https://living-brands-admin.vercel.app/api/partnership",
+        "https://habson-admin.vercel.app/api/partnership",
         { next: { revalidate: 10 } }
       );
       const data = await res.json();

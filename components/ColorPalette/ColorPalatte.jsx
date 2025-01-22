@@ -4,12 +4,9 @@ import Image from "next/image";
 import { useRef, useEffect, useState } from "react";
 
 const fetchColorData = async () => {
-  const res = await fetch(
-    "https://living-brands-admin.vercel.app/api/color-palette",
-    {
-      next: { revalidate: 10 },
-    }
-  );
+  const res = await fetch("https://habson-admin.vercel.app/api/color-palette", {
+    next: { revalidate: 10 },
+  });
   return await res.json();
 };
 

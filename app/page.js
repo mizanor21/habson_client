@@ -12,7 +12,7 @@ import Trending from "@/components/Home/Trending/Trending";
 import Partner from "@/components/Home/Partner/Partner";
 
 export default async function Home() {
-  const res = await fetch("https://living-brands-admin.vercel.app/api/home", {
+  const res = await fetch("https://habson-admin.vercel.app/api/home", {
     next: { revalidate },
   });
 

@@ -25,7 +25,7 @@ const Nav = () => {
     const fetchData = async () => {
       try {
         const response = await fetch(
-          "https://living-brands-admin.vercel.app/api/works"
+          "https://habson-admin.vercel.app/api/works"
         );
         const data = await response.json();
         const caseStudy = data.filter((item) => item.category === "Casestudy");
