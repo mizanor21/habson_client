@@ -5,8 +5,7 @@ const PartnerSection = ({ partnersData }) => {
     <div className="bg-white pb-10 relative z-[110] rounded-b-[20px] lg:rounded-b-[40px] font-sora">
       <div className="px-[5%]">
         <h2 className="text-2xl md:text-[36px] lg:text-[48px] font-bold text-[#127acc] leading-[1.2]">
-          Proudly Collaborating With The Most Cutting-Edge Platforms In The
-          Industry
+          Leveraging Cutting-Edge Technology for Unparalleled Results.
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-20 md:gap-12 xl:gap-[73px] items-center text-center  justify-center mt-28">

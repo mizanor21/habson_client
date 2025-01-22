@@ -10,7 +10,8 @@ const CareerSection = () => {
         Career
       </h1>
       <p className="text-[18px] font-[400] text-black mb-8">
-        Showcasing the innovative spirit of Bangladesh on a global stage.
+        Connecting the world to the extraordinary stories and ideas from
+        Bangladesh.
       </p>
       <Link target="_black" href="/career-details">
         <div className="max-w-[223px] 2xl:max-w-[400px]">
