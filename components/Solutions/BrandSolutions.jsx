@@ -16,7 +16,7 @@ const BrandSolutions = ({ shortDescription, items, brand }) => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10 lg:mb-20">
         {/* Left Side */}
         <div>
-          <h2 className="text-[24px] md:text-4xl lg:text-[48px] text-[#125b5c] font-bold mb-5 md:mb-10 transition duration-300 ease-in-out transform">
+          <h2 className="text-[24px] md:text-4xl lg:text-[48px] text-[#127acc] font-bold mb-5 md:mb-10 transition duration-300 ease-in-out transform">
             Brand Solutions
           </h2>
 
@@ -25,7 +25,7 @@ const BrandSolutions = ({ shortDescription, items, brand }) => {
           </p>
 
           <hr className="h-[3px] bg-gray-500 mb-5 max-w-[70px] md:max-w-[100px] lg:max-w-52" />
-          <p className="font-semibold text-[18px] text-[#125b5c] mb-10 transition-opacity duration-300 ease-in-out">
+          <p className="font-semibold text-[18px] text-[#127acc] mb-10 transition-opacity duration-300 ease-in-out">
             Proud to work with the biggest brands in Bangladesh & Abroad
           </p>
 
@@ -53,7 +53,7 @@ const BrandSolutions = ({ shortDescription, items, brand }) => {
           {items?.map((item, index) => (
             <div key={item._id} className="border-b border-gray-300">
               <button
-                className="w-full flex justify-between items-center py-4 text-[18px] lg:text-[16px] font-[700] text-[#125b5c] text-left transition duration-300 ease-in-out transform hover:text-[#0d4a4c]"
+                className="w-full flex justify-between items-center py-4 text-[18px] lg:text-[16px] font-[700] text-[#127acc] text-left transition duration-300 ease-in-out transform hover:text-[#0d4a4c]"
                 onClick={() => toggle(index)}
               >
                 {item.title}

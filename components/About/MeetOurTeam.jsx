@@ -74,7 +74,7 @@ const MeetOurTeam = ({ teamsData }) => {
                   transform: "translate(-50%, -50%)", // Center under the mouse
                 }}
               >
-                <div className="bg-[#125b5c] text-white overflow-hidden w-full h-full rounded-full flex justify-center items-center relative">
+                <div className="bg-[#127acc] text-white overflow-hidden w-full h-full rounded-full flex justify-center items-center relative">
                   <small style={scrollAnimation}>
                     {team?.name} {team?.name}
                   </small>

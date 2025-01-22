@@ -44,7 +44,7 @@ const Achievement = async () => {
             }`}
           >
             <h1
-              className="text-2xl font-bold mt-1 md:text-3xl lg:text-[48px] text-[#125b5c] mb-8"
+              className="text-2xl font-bold mt-1 md:text-3xl lg:text-[48px] text-[#127acc] mb-8"
               style={{ lineHeight: "1.03" }}
             >
               {award.title}

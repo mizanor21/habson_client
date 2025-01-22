@@ -1,6 +1,7 @@
 "use client";
 "use client";
 import React, { useState } from "react";
+import logo from "@/public/assets/logo/logoFooter.png";
 import { HiLocationMarker } from "react-icons/hi";
 import { RiCopyrightFill } from "react-icons/ri";
 import {
@@ -49,7 +50,7 @@ const Footer = () => {
   };
 
   return (
-    <div className="bg-[#185C5D] sticky bottom-0 z-[105] font-sora pb-10">
+    <div className="bg-[#127acc] sticky bottom-0 z-[105] font-sora pb-10">
       <style>{keyframes}</style>
 
       {/* Footer Image Section with Hover Visibility */}
@@ -64,7 +65,7 @@ const Footer = () => {
             className="w-44 h-10 absolute z-[999] opacity-0 group-hover:opacity-100 transition-opacity duration-300 shadow-2xl rounded-full"
             style={{ top: position.y - 50, left: position.x - 90 }}
           >
-            <div className="bg-[#125b5c] text-white overflow-hidden w-full h-full rounded-full flex justify-center items-center">
+            <div className="bg-[#127acc] text-white overflow-hidden w-full h-full rounded-full flex justify-center items-center">
               <p style={scrollAnimation}>Contact Us &nbsp; Contact Us</p>
               <p style={scrollAnimation1} className="opacity-60">
                 Contact Us
@@ -72,11 +73,11 @@ const Footer = () => {
             </div>
           </div>
           <Image
-            width={200}
-            height={200}
-            className="max-h-[230px]"
-            src="https://i.postimg.cc/L68GLfzq/footer-logo.png"
-            alt="Footer Logo"
+            width={900}
+            height={800}
+            className="max-h-[300px] py-10 lg:py-16"
+            src={logo}
+            alt="Habson Communication Logo"
           />
         </footer>
       </Link>
@@ -149,7 +150,7 @@ const Footer = () => {
             <div className="flex justify-center items-center lg:justify-end gap-x-1 2xl:gap-x-2">
               <RiCopyrightFill className="hidden sm:block text-[22px] m-[2px]" />
               <p className="text-[12px] 2xl:text-[13px] text-center">
-                All Rights Reserved by Living Brands
+                Copyright Habson Communication. All Rights Reserved
               </p>
             </div>
           </div>

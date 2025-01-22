@@ -15,7 +15,7 @@ const CSR = () => {
       </div>
 
       <div className="py-5 w-[100%] mx-auto text-[15px]">
-        <h2 className="font-bold text-[20px] md:text-[34px] text-[#125b5c] my-5 lg:hidden">
+        <h2 className="font-bold text-[20px] md:text-[34px] text-[#127acc] my-5 lg:hidden">
           LIVING BRANDS DIGITAL SOLUTIONS PRIVATE LIMITED (“LIVING BRANDS”) CSR
           POLICY
         </h2>

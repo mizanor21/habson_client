@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import TimeSchbang from "../TimeSchbang/TimeSchbang";
-import ButtonEffect from "@/app/button/page";
+import ButtonEffect from "@/components/Custom/Button";
 import { MdOutlineArrowRightAlt } from "react-icons/md";
 import Image from "next/image";
 
@@ -43,7 +43,7 @@ const Hero = ({ data }) => {
           <div className="flex flex-col items-center justify-between lg:flex-row">
             <div className="mb-10 lg:max-w-lg lg:pr-5 lg:mb-0">
               <div className="max-w-xl mb-6">
-                <h2 className="mb-6 text-3xl sm:leading-none lg:text-[3.5rem] font-[700] tracking-tight text-[#185C5D] ">
+                <h2 className="mb-6 text-3xl sm:leading-none lg:text-[3.5rem] font-[700] tracking-tight text-[#127acc] ">
                   {data?.title}
                 </h2>
                 <p className="text-[16px] lg:text-[20px] my-[44px] font-[400] md:mt-0">

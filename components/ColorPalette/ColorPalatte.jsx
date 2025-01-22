@@ -81,7 +81,7 @@ const ColorPalette = () => {
                   </div>
                   <div className="p-[25px] h-[300px] relative ">
                     <div className="text-center">
-                      <h2 className="text-[22px] font-bold text-[#185C5D]">
+                      <h2 className="text-[22px] font-bold text-[#127acc]">
                         {color.title}
                       </h2>
                       <p className="text-[16px] group-hover:text-black py-2">
@@ -110,7 +110,7 @@ const ColorPalette = () => {
               />
             </div>
             <div className="mt-6 mb-20">
-              <h2 className="text-[24px] font-[700] text-[#185C5D]">
+              <h2 className="text-[24px] font-[700] text-[#127acc]">
                 {color.title}
               </h2>
               <p className="text-[16px] font-[500] py-4">{color.description}</p>

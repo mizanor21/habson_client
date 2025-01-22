@@ -1,12 +1,12 @@
 import Link from "next/link";
 import React from "react";
 import { MdOutlineArrowRightAlt } from "react-icons/md";
-import ButtonEffect from "@/app/button/page";
+import ButtonEffect from "@/components/Custom/Button";
 
 const CareerSection = () => {
   return (
     <div className="bg-white py-10 lg:py-20 font-sora">
-      <h1 className="text-3xl md:text-2xl lg:text-[48px] font-bold text-[#125b5c] mb-5">
+      <h1 className="text-3xl md:text-2xl lg:text-[48px] font-bold text-[#127acc] mb-5">
         Career
       </h1>
       <p className="text-[18px] font-[400] text-black mb-8">

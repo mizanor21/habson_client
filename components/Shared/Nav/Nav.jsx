@@ -8,11 +8,12 @@ import Image from "next/image";
 import WordRotate from "@/components/magicui/word-rotate";
 import logo from "@/public/assets/logo/logo.png";
 import { MdOutlineArrowRightAlt } from "react-icons/md";
-import ButtonEffect from "@/app/button/page";
+
 import { usePathname } from "next/navigation";
 import Popup from "@/components/Popup/Popup";
 import { FiMenu } from "react-icons/fi";
 import { useEffect } from "react";
+import ButtonEffect from "@/components/Custom/Button";
 
 const Nav = () => {
   // State declarations
@@ -109,52 +110,6 @@ const Nav = () => {
     setOpenAccordion(openAccordion === accordionName ? null : accordionName);
   };
 
-  // // Card data
-  // const solutionsData = [
-  //   {
-  //     id: 1,
-  //     src: "https://i.postimg.cc/8PDs8ccw/kgrit-U3-IYXE-HD-1.jpg",
-  //     title: "DBL Ceramics Presents: An Emotional May Day Tribute",
-  //     link: "https://living-brands.co/works/6738ac74167e8afc78d608cf",
-  //   },
-  //   {
-  //     id: 2,
-  //     src: "https://i.postimg.cc/K88zzWnM/1.jpg",
-  //     title: "Pusti Chinigura Rice X Nusrat Faria",
-  //     link: "https://living-brands.co/works/6738ac74167e8afc78d608da",
-  //   },
-  // ];
-
-  // const AboutData = [
-  //   {
-  //     id: 1,
-  //     src: "https://i.postimg.cc/9Fkg9rMr/puma.png",
-  //     title: "PUMA.com | Clothing, Shoes, Accessories | Forever Faster.",
-  //     link: "https://living-brands.co/works/6738ac74167e8afc78d608cf",
-  //   },
-  //   {
-  //     id: 2,
-  //     src: "https://i.postimg.cc/J0c4bgRc/about2.jpg",
-  //     title: "Introducing Outlander Black Edition",
-  //     link: "https://living-brands.co/works/6738ac74167e8afc78d608cf",
-  //   },
-  // ];
-
-  // const ResourcesData = [
-  //   {
-  //     id: 1,
-  //     src: "https://i.postimg.cc/1t3S7tTc/dt-BSuy7-OJd8-HD.jpg",
-  //     title: "Ceramic Expo Bangladesh Highlight 01",
-  //     link: "https://living-brands.co/works/6738ac74167e8afc78d608d0",
-  //   },
-  //   {
-  //     id: 2,
-  //     src: "https://i.postimg.cc/XNg2MVb3/ey-SLf-CX2-Vsk-HD.jpg",
-  //     title: "Disruption on the Digital Strages",
-  //     link: "https://living-brands.co/works/6738ac74167e8afc78d608d3",
-  //   },
-  // ];
-
   return (
     <>
       <div className="md:sticky relative top-0 z-[9999] ">
@@ -182,7 +137,7 @@ const Nav = () => {
                 className="w-[40px]"
                 alt="Living Brands logo"
               ></Image>
-              <h1 className="animate-pulse rounded-full bg-[#125b5c] w-[5px] h-[5px]"></h1>
+              <h1 className="animate-pulse rounded-full bg-[#127acc] w-[5px] h-[5px]"></h1>
               <WordRotate
                 className="text-sm md:text-lg font-[600] p-0 m-0 w-full"
                 words={[
@@ -536,7 +491,7 @@ const Nav = () => {
         <div className="navber-logo z-[210] pt-10 md:pt-0 max-[991px]:hidden">
           <div className="">
             <div className="w-[100%]">
-              <div className={`flex items-end gap-[5px] text-[#125b5c]`}>
+              <div className={`flex items-end gap-[5px] text-[#127acc]`}>
                 <Link href="/" onClick={() => handleNavigations("/")}>
                   <Image
                     src={logo}
@@ -544,7 +499,7 @@ const Nav = () => {
                     alt="Living Brands logo"
                   ></Image>
                 </Link>
-                <h1 className="rounded-full bg-[#125b5c] w-[5px] h-[5px] lg:w-[7px] lg:h-[7px] animate-pulse font-bold mb-[14px] 2xl:mb-[17px]"></h1>
+                <h1 className="rounded-full bg-[#127acc] w-[5px] h-[5px] lg:w-[7px] lg:h-[7px] animate-pulse font-bold mb-[14px] 2xl:mb-[17px]"></h1>
 
                 <WordRotate
                   className="text-[11px] xl:text-[13px] 2xl:text-lg  font-[600] p-0 m-0 w-full"
@@ -567,7 +522,7 @@ const Nav = () => {
         </div>
 
         {/* Main Nav Links */}
-        <div className=" navber-links text-[#125b5c] font-sora font-[500] text-[14px] h-full">
+        <div className=" navber-links text-[#127acc] font-sora font-[500] text-[14px] h-full">
           <ul className="flex justify-center items-center gap-5 lg:gap-8 xl:gap-14 2xl:gap-16">
             <li className={`${pathname === "/work" && "text-[#ee4580]"}`}>
               <Link href="/works" className="link">
@@ -661,7 +616,7 @@ const Nav = () => {
                                 transform: "translate(-50%, -50%)", // Center under the mouse
                               }}
                             >
-                              <div className="bg-[#125b5c] text-white overflow-hidden w-full h-full rounded-full flex justify-center items-center relative">
+                              <div className="bg-[#127acc] text-white overflow-hidden w-full h-full rounded-full flex justify-center items-center relative">
                                 <p style={scrollAnimation}>View Case study</p>
                               </div>
                             </div>
@@ -812,7 +767,7 @@ const Nav = () => {
                                 transform: "translate(-50%, -50%)", // Center under the mouse
                               }}
                             >
-                              <div className="bg-[#125b5c] text-white overflow-hidden w-full h-full rounded-full flex justify-center items-center relative">
+                              <div className="bg-[#127acc] text-white overflow-hidden w-full h-full rounded-full flex justify-center items-center relative">
                                 <p style={scrollAnimation}>View Case study</p>
                               </div>
                             </div>
@@ -894,7 +849,7 @@ const Nav = () => {
                               transform: "translate(-50%, -50%)", // Center under the mouse
                             }}
                           >
-                            <div className="bg-[#125b5c] text-white overflow-hidden w-full h-full rounded-full flex justify-center items-center relative">
+                            <div className="bg-[#127acc] text-white overflow-hidden w-full h-full rounded-full flex justify-center items-center relative">
                               <p style={scrollAnimation}>View Blog</p>
                             </div>
                           </div>

@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import ButtonEffect from "../button/page";
+import ButtonEffect from "@/components/Custom/Button";
 import { useItemsData } from "@/components/Custom/DataFetch";
 import Items from "@/components/Items/Items";
 
@@ -40,7 +40,7 @@ const Works = () => {
   return (
     <div className="bg-white relative z-[110] rounded-b-[40px] pb-10 lg:pb-20 font-sora">
       <div className="px-[5%] pb-10">
-        <h2 className="text-2xl md:text-4xl lg:text-[48px] leading-10 text-[#125b5c] font-bold pt-5 md:pt-10 pb-8 lg:pt-[80px] lg:pb-[70px]">
+        <h2 className="text-2xl md:text-4xl lg:text-[48px] leading-10 text-[#127acc] font-bold pt-5 md:pt-10 pb-8 lg:pt-[80px] lg:pb-[70px]">
           Explore Our Latest Work
         </h2>
         <hr />

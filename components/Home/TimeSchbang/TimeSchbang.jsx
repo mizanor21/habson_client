@@ -57,7 +57,7 @@ const TimeSchbang = () => {
                   fontSize: "30px",
                   fontWeight: 900,
                   color: "transparent",
-                  WebkitTextStroke: "1px #125b5c",
+                  WebkitTextStroke: "1px #127acc",
                 }}
               >
                 IT&apos;S TIME TO CREATE A LIVING BRANDS
@@ -78,7 +78,7 @@ const TimeSchbang = () => {
                   fontSize: "30px",
                   fontWeight: 900,
                   color: "transparent",
-                  WebkitTextStroke: "1px #125b5c",
+                  WebkitTextStroke: "1px #127acc",
                 }}
               >
                 IT&apos;S TIME TO CREATE A LIVING BRANDS

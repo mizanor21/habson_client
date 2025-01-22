@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import ButtonEffect from "@/app/button/page";
+import ButtonEffect from "@/components/Custom/Button";
 import { MdOutlineArrowRightAlt } from "react-icons/md";
 import Link from "next/link";
 
@@ -81,8 +81,8 @@ const ContactUsRightPart = () => {
       />
       <form onSubmit={handleSubmit} className="font-sora text-black">
         {/* Form Fields */}
-        <p className="text-[16px] my-2 text-[#125b5c]">GOT AN IDEA?</p>
-        <h1 className="text-[24px] lg:text-[30px] font-bold my-2 text-[#125b5c]">
+        <p className="text-[16px] my-2 text-[#127acc]">GOT AN IDEA?</p>
+        <h1 className="text-[24px] lg:text-[30px] font-bold my-2 text-[#127acc]">
           Drop us a message!
         </h1>
         <p className="text-[16px] text-[#1f2937] my-2">
@@ -90,7 +90,7 @@ const ContactUsRightPart = () => {
           email with your details and requirements to
           <a
             href="mailto:life@living-brands.co"
-            className="text-[#125b5c] hover:underline ml-1"
+            className="text-[#127acc] hover:underline ml-1"
           >
             life@living-brands.co
           </a>

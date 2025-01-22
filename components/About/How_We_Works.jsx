@@ -4,14 +4,14 @@ const HowWeWorks = () => {
   return (
     <div className="relative z-[110] bg-white font-sora">
       <div className="">
-        <h1 className="text-[24px] lg:text-3xl font-bold text-[#125B5C] py-[5%] lg:pt-[80px] lg:pb-[60px] md:text-3xl lg:text-[48px]">
+        <h1 className="text-[24px] lg:text-3xl font-bold text-[#127acc] py-[5%] lg:pt-[80px] lg:pb-[60px] md:text-3xl lg:text-[48px]">
           Let&apos;s Make Your Brand Live. Choose Living Brands.
         </h1>
         <hr className="w-full text-gray-400" />
         <div>
           <div className="md:flex gap-5">
             <div className="mt-10 lg:mt-16 hidden md:block">
-              <p className="text-xl lg:text-[24px] font-bold md:leading-[1.5] text-[#125B5C]">
+              <p className="text-xl lg:text-[24px] font-bold md:leading-[1.5] text-[#127acc]">
                 On A Mission to Showcase The Finest of Bangladeshi Creative
                 Talent to The World!
               </p>

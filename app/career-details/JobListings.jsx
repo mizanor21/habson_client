@@ -49,7 +49,7 @@ const JobListings = () => {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 px-[5%]">
         {/* Job Listings */}
         <div className="col-span-3">
-          <h2 className="text-2xl font-semibold text-[#125b5c]">Join us</h2>
+          <h2 className="text-2xl font-semibold text-[#127acc]">Join us</h2>
           <p className="text-gray-500">Current Openings</p>
 
           {/* Search Section */}
@@ -152,7 +152,7 @@ const JobListings = () => {
                 onClick={() => handlePageChange(index + 1)}
                 className={`px-4 py-2 rounded ${
                   currentPage === index + 1
-                    ? "bg-[#125b5c] text-white"
+                    ? "bg-[#127acc] text-white"
                     : "bg-gray-200 text-gray-700"
                 }`}
               >

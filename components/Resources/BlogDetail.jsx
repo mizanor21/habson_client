@@ -50,7 +50,7 @@ const BlogDetail = ({ data }) => {
   return (
     <div className="font-sora px-[5%]">
       <div className="lg:px-[10%]">
-        <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold pt-10 lg:pt-28 pb-5 text-[#125b5c]">
+        <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold pt-10 lg:pt-28 pb-5 text-[#127acc]">
           {data.blog.title}
         </h1>
 
@@ -144,7 +144,7 @@ const BlogDetail = ({ data }) => {
                 </li>
               </ul>
 
-              <p className="text-2xl md:text-4xl lg:text-[38px] text-[#125b5c] font-bold py-5">
+              <p className="text-2xl md:text-4xl lg:text-[38px] text-[#127acc] font-bold py-5">
                 Playing the employer branding game
               </p>
               <ul className=" space-y-8 mb-8 text-[15px] font-[400]">
@@ -166,7 +166,7 @@ const BlogDetail = ({ data }) => {
                 </li>
               </ul>
 
-              <p className=" text-2xl md:text-4xl text-[#125b5c] font-bold py-5">
+              <p className=" text-2xl md:text-4xl text-[#127acc] font-bold py-5">
                 Our Innovative Approach to Pioneer Legal
               </p>
               <ul className=" space-y-8 mb-8">
@@ -197,7 +197,7 @@ const BlogDetail = ({ data }) => {
                   </li>
                 </ul>
               </ul>
-              <p className="text-[#125b5c] text-2xl md:text-4xl font-bold py-5">
+              <p className="text-[#127acc] text-2xl md:text-4xl font-bold py-5">
                 From India to the World: Amazon Global Selling
               </p>
 
@@ -250,7 +250,7 @@ const BlogDetail = ({ data }) => {
                   </ul>
                 </ul>
               </ul>
-              <p className="text-[#125b5c] text-2xl md:text-4xl font-bold py-5">
+              <p className="text-[#127acc] text-2xl md:text-4xl font-bold py-5">
                 Making Hindustan Coca-Cola Beverages Great Again
               </p>
 
@@ -286,7 +286,7 @@ const BlogDetail = ({ data }) => {
                   </li>
                 </ul>
               </ul>
-              <p className="text-[#125b5c] text-2xl md:text-4xl font-bold py-5">
+              <p className="text-[#127acc] text-2xl md:text-4xl font-bold py-5">
                 Taking the leap
               </p>
               <ul className=" space-y-8 mb-8">

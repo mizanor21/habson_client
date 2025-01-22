@@ -145,7 +145,7 @@ const Slideshow = ({ data }) => {
         className="w-44 h-10 absolute z-[120] border border-gray-700 rounded-full hidden lg:block"
         style={{ top: position.y - 50, left: position.x - 90 }}
       >
-        <div className="bg-[#125b5c] text-white overflow-hidden w-full h-full rounded-full flex justify-center items-center relative">
+        <div className="bg-[#127acc] text-white overflow-hidden w-full h-full rounded-full flex justify-center items-center relative">
           {/* Scrolling text with inline styles */}
           <Link href={""} className="" style={scrollAnimation}>
             View More View More
@@ -332,7 +332,7 @@ const Slideshow = ({ data }) => {
             className="absolute bottom-8 left-5 z-[120] cursor-pointer"
             onClick={handleClickMobile}
           >
-            <BsArrowRight className="text-5xl text-[#125b5c] bg-white p-3 rounded-full " />
+            <BsArrowRight className="text-5xl text-[#127acc] bg-white p-3 rounded-full " />
           </button>
         </div>
       </div>

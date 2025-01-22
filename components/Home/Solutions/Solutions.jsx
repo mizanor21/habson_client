@@ -19,7 +19,7 @@ const Card = ({ section, index }) => {
               {section?.content}
             </p>
             <div className="flex justify-center pt-5 lg:pt-14">
-              <HiMiniArrowLongRight className="xl:w-20 arrowIcon xl:h-20 text-2xl lg:text-[40px] carousel-p text-[#125b5c] p-3 hidden-on-hover  bg-white rounded-full group-hover:border-2 border-gray-300" />
+              <HiMiniArrowLongRight className="xl:w-20 arrowIcon xl:h-20 text-2xl lg:text-[40px] carousel-p text-[#127acc] p-3 hidden-on-hover  bg-white rounded-full group-hover:border-2 border-gray-300" />
             </div>
           </div>
         </div>
@@ -95,7 +95,7 @@ const Solutions = ({ data }) => {
                       {section?.title}
                     </h3>
                     <p className="text-[14px] font-[500]">{section?.content}</p>
-                    <HiMiniArrowLongRight className="text-[40px] my-5 bg-[#125b5c] p-2 rounded-full text-white" />
+                    <HiMiniArrowLongRight className="text-[40px] my-5 bg-[#127acc] p-2 rounded-full text-white" />
                   </div>
                 </div>
               </Link>
