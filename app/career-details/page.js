@@ -18,7 +18,7 @@ const CareerDetails = () => {
               className="animate-bounce"
               width={200}
               height={200}
-              alt="Living Brands Logo"
+              alt="Habson Logo"
             ></Image>
           </Link>
           <Link href="/career-details" className="text-[16px] font-[500]">
