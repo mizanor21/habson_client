@@ -628,6 +628,8 @@ const Nav = () => {
 
               <li
                 className={` group flex items-center justify-center cursor-pointer`}
+                onMouseEnter={() => setIsDropdownOpen(true)} // Open dropdown on hover
+                onMouseLeave={() => setIsDropdownOpen(false)} // Close dropdown when hover ends
               >
                 <p className="link no-underline">About</p>
                 <RiArrowDropDownLine
@@ -785,6 +787,8 @@ const Nav = () => {
 
               <li
                 className={` group flex items-center justify-center cursor-pointer h-16`}
+                onMouseEnter={() => setIsDropdownOpen(true)} // Open dropdown on hover
+                onMouseLeave={() => setIsDropdownOpen(false)} // Close dropdown when hover ends
               >
                 <p className="link no-underline">Resources</p>
                 <RiArrowDropDownLine
