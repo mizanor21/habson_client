@@ -20,7 +20,7 @@ const LivingBrandsNetworks = ({ shortDescription, items, brand }) => {
             Habson Network & Partnerships
           </h2>
 
-          <p className="text-[18px] font-normal text-gray-800 mb-5 transition duration-300 ease-in-out">
+          <p className="text-[16px] xl:text-[18px] font-normal text-gray-800 mb-5 transition duration-300 ease-in-out">
             {shortDescription}
           </p>
 

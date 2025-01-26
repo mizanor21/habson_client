@@ -369,16 +369,14 @@ const Nav = () => {
                         </li>
                         <li>
                           <Link
-                            href="/living-brands-networks"
-                            onClick={() =>
-                              handleItemClick("/living-brands-networks")
-                            }
+                            href="/habson-networks"
+                            onClick={() => handleItemClick("/habson-networks")}
                             className={`text-[14px] font-[500] ${
-                              pathname === "/living-brands-networks" &&
+                              pathname === "/habson-networks" &&
                               "text-[#ee4580]"
                             }`}
                           >
-                            Living Networks
+                            Habson Networks
                           </Link>
                         </li>
                         <li>
@@ -701,14 +699,14 @@ const Nav = () => {
 
                         <h2 className="mb-4">
                           <a
-                            href={"/living-brands-networks"}
+                            href={"/habson-networks"}
                             className={`text-2xl lg:text-[30px] font-[600] ${
-                              pathname === "/living-brands-networks"
+                              pathname === "/habson-networks"
                                 ? "text-[#ee4580]"
                                 : ""
                             }`}
                           >
-                            Living Networks
+                            Habson Networks
                           </a>
                         </h2>
 

@@ -9,7 +9,7 @@ const CareerSection = () => {
       <h1 className="text-3xl md:text-2xl lg:text-[48px] font-bold text-[#127acc] mb-5">
         Career
       </h1>
-      <p className="text-[18px] font-[400] text-black mb-8">
+      <p className="text-[16px] lg:text-[18px] font-[400] text-black mb-8">
         Connecting the world to the extraordinary stories and ideas from
         Bangladesh.
       </p>

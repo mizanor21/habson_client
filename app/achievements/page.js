@@ -59,7 +59,7 @@ const Achievement = async () => {
               <div className="max-w-sm mt-8">
                 <ButtonEffect>
                   <span className="flex gap-2 items-center">
-                    Access Living Brand&apos;s Bots
+                    Access Habson Bots
                     <MdOutlineArrowRightAlt className="text-xl" />
                   </span>
                 </ButtonEffect>

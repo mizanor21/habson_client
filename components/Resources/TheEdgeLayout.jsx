@@ -49,7 +49,7 @@ const TheEdgeLayout = ({ data }) => {
                 <Link href={edge.buttonLink}>
                   <ButtonEffect>
                     <span className="flex gap-2">
-                      Access Living Brand&apos;s Glossary
+                      Access Habson Glossary
                       <MdOutlineArrowRightAlt className="text-xl" />
                     </span>
                   </ButtonEffect>

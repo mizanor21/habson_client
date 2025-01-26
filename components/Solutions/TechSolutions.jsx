@@ -20,7 +20,7 @@ const TechSolutions = ({ shortDescription, items, brands }) => {
             Tech Solutions
           </h2>
 
-          <p className="text-[18px] font-normal text-black mb-5 transition duration-300 ease-in-out">
+          <p className="text-[16px] xl:text-[18px] font-normal text-gray-800 mb-5 transition duration-300 ease-in-out">
             {shortDescription}
           </p>
           <hr className="h-[3px] bg-gray-500 mb-5 max-w-[70px] md:max-w-[100px] lg:max-w-52" />
