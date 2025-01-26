@@ -838,6 +838,7 @@ const Nav = () => {
                             className={`text-2xl lg:text-[30px] font-[600] ${
                               pathname === "/blogs" ? "text-[#ee4580]" : ""
                             }`}
+                            onClick={closeDropdownResources}
                           >
                             Blogs
                           </Link>
@@ -848,6 +849,7 @@ const Nav = () => {
                             className={`text-2xl lg:text-[30px] font-[600] ${
                               pathname === "/the-edge" ? "text-[#ee4580]" : ""
                             }`}
+                            onClick={closeDropdownResources}
                           >
                             The Edge
                           </Link>
