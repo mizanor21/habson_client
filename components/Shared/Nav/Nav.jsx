@@ -537,10 +537,9 @@ const Nav = () => {
                 className="group flex items-center justify-center cursor-pointer"
                 onMouseEnter={() => setIsDropdownOpen(true)} // Open dropdown on hover
                 onMouseLeave={() => setIsDropdownOpen(false)} // Close dropdown when hover ends
+                onClick={toggleDropdown}
               >
-                <p className="link no-underline" onClick={toggleDropdown}>
-                  Solutions
-                </p>
+                <p className="link no-underline">Solutions</p>
                 <RiArrowDropDownLine
                   className={`text-2xl xl:text-3xl 2xl:text-4xl dropdown-icon transform transition-transform duration-300 ease-in-out ${
                     isDropdownOpen ? "rotate-180" : ""
@@ -628,14 +627,18 @@ const Nav = () => {
                 className={` group flex items-center justify-center cursor-pointer`}
                 onMouseEnter={() => setIsDropdownOpen(true)} // Open dropdown on hover
                 onMouseLeave={() => setIsDropdownOpen(false)} // Close dropdown when hover ends
+                onClick={toggleDropdown}
               >
                 <p className="link no-underline">About</p>
                 <RiArrowDropDownLine
-                  className={`text-2xl xl:text-3xl 2xl:text-4xl dropdown-icon transform transition-transform duration-300 ease-in-out group-hover:rotate-180`}
+                  className={`text-2xl xl:text-3xl 2xl:text-4xl dropdown-icon transform transition-transform duration-300 ease-in-out ${
+                    isDropdownOpen ? "rotate-180" : ""
+                  }`}
                 />
                 <div
-                  className="overflow-hidden absolute top-full left-0 h-0 group-hover:h-[60vh] bg-white w-screen invisible 
-      transition-all duration-700 border-b border-black group-hover:visible"
+                  className={`absolute top-full left-0 w-screen bg-white border-b border-black overflow-hidden transition-all duration-700 ${
+                    isDropdownOpen ? "h-[60vh] visible" : "h-0 invisible"
+                  }`}
                 >
                   <div className=" w-full h-full   z-[115] ">
                     <div className="h-full flex justify-between gap-5 px-[5%] pt-5 pb-10 lg:pb-64">
@@ -787,14 +790,18 @@ const Nav = () => {
                 className={` group flex items-center justify-center cursor-pointer h-16`}
                 onMouseEnter={() => setIsDropdownOpen(true)} // Open dropdown on hover
                 onMouseLeave={() => setIsDropdownOpen(false)} // Close dropdown when hover ends
+                onClick={toggleDropdown}
               >
                 <p className="link no-underline">Resources</p>
                 <RiArrowDropDownLine
-                  className={`text-2xl xl:text-3xl 2xl:text-4xl dropdown-icon transform transition-transform duration-300 ease-in-out group-hover:rotate-180`}
+                  className={`text-2xl xl:text-3xl 2xl:text-4xl dropdown-icon transform transition-transform duration-300 ease-in-out ${
+                    isDropdownOpen ? "rotate-180" : ""
+                  }`}
                 />
                 <div
-                  className="overflow-hidden absolute top-full left-0 h-0 group-hover:h-[60vh] bg-white w-screen invisible 
-      transition-all duration-700 border-b border-black group-hover:visible"
+                  className={`absolute top-full left-0 w-screen bg-white border-b border-black overflow-hidden transition-all duration-700 ${
+                    isDropdownOpen ? "h-[60vh] visible" : "h-0 invisible"
+                  }`}
                 >
                   <div className="  w-full h-full z-[115] ">
                     <div className=" h-full flex justify-between gap-5 px-[5%] pt-5 pb-10 lg:pb-64 ">
