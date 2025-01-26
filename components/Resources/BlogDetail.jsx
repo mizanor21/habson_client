@@ -7,7 +7,7 @@ const BlogDetail = ({ data }) => {
     try {
       // Use the simpler sharer.php approach which is more reliable
       const shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(
-        `https://living-brands-v1.vercel.app/blogs/${data.blog._id}`
+        `https://habson.vercel.app/blogs/${data.blog._id}`
       )}`;
       const width = 800;
       const height = 600;
@@ -26,7 +26,7 @@ const BlogDetail = ({ data }) => {
   const handleShareLinkedIn = () => {
     try {
       const shareUrl = `https://www.linkedin.com/shareArticle?mini=true&url=${encodeURIComponent(
-        `https://living-brands-v1.vercel.app/blogs/${data.blog._id}`
+        `https://habson.vercel.app/blogs/${data.blog._id}`
       )}&title=${encodeURIComponent(data.blog.title)}`;
       const width = 800;
       const height = 600;
