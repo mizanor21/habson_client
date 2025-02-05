@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { FaArrowLeftLong, FaArrowRightLong } from "react-icons/fa6";
+import Image from "next/image";
 
 const Partner = () => {
   const [partnershipData, setPartnershipData] = useState([]);
@@ -12,6 +13,7 @@ const Partner = () => {
     left: -999,
     right: -999,
   });
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -33,20 +35,28 @@ const Partner = () => {
     };
 
     fetchData();
+
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   const responsive = {
     superLargeDesktop: {
       breakpoint: { max: 4000, min: 1920 },
-      items: 3,
+      items: isMobile ? 1 : 3,
     },
     desktop: {
       breakpoint: { max: 1920, min: 1024 },
-      items: 3,
+      items: isMobile ? 1 : 3,
     },
     tablet: {
       breakpoint: { max: 1024, min: 768 },
-      items: 1,
+      items: isMobile ? 1 : 2,
     },
     mobile: {
       breakpoint: { max: 768, min: 0 },
@@ -55,6 +65,8 @@ const Partner = () => {
   };
 
   const handleMouseMove = (e) => {
+    if (isMobile) return;
+
     const { clientX, currentTarget } = e;
     const { left, width } = currentTarget.getBoundingClientRect();
     const cursorPosition = clientX - left;
@@ -80,7 +92,9 @@ const Partner = () => {
   };
 
   const handleMouseLeave = () => {
-    setArrowPosition({ left: -999, right: -999 });
+    if (!isMobile) {
+      setArrowPosition({ left: -999, right: -999 });
+    }
   };
 
   if (isLoading) {
@@ -107,9 +121,11 @@ const Partner = () => {
           autoPlay
           autoPlaySpeed={3000}
           keyBoardControl
-          centerMode={true}
+          centerMode={!isMobile}
           containerClass="carousel-container"
-          itemClass="carousel-item-padding-40-px"
+          itemClass={`carousel-item ${
+            isMobile ? "" : "carousel-item-padding-40-px"
+          }`}
           customLeftArrow={
             <div
               className="hidden cursor-pointer absolute top-1/2 transform -translate-y-1/2 left-0 bg-[#127acc] text-white lg:flex justify-center items-center text-xl w-12 h-12 lg:w-16 lg:h-16 rounded-full transition-transform duration-300"
@@ -136,17 +152,25 @@ const Partner = () => {
           {partnershipData?.map((partner, index) => (
             <div
               key={index}
-              className="text-center px-4 transition-all duration-300"
+              className={`text-center ${
+                isMobile ? "mr-2" : "px-4"
+              } transition-all duration-300`}
             >
-              <img
+              <Image
                 src={partner?.logo || "/placeholder.svg"}
                 alt={`${partner?.name} Logo`}
+                width={200}
+                height={200}
                 className="mx-auto mb-2 h-16 object-contain saturate-0 hover:saturate-100"
               />
               <h3 className="text-[20px] tracking-tighter font-bold text-black mb-2 mt-10">
                 {partner?.name}
               </h3>
-              <p className="text-black text-[15px] font-[400] mb-2">
+              <p
+                className={`text-black text-[15px] font-[400] mb-2 ${
+                  isMobile ? "opacity-75" : ""
+                }`}
+              >
                 {partner?.description}
               </p>
             </div>
