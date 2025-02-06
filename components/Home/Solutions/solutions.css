@@ -22,43 +22,51 @@
 }
 
 .slide-1:hover {
-  background-color: #013438;
+  background-color: #0064b2;
 }
 
 .slide-2:hover {
-  background-color: #065866;
+  background-color: #0d5f9d;
 }
 
 .slide-3:hover {
-  background-color: #078e92;
+  background-color: #e2252c;
 }
 
 .slide-4:hover {
-  background-color: #fe3967;
+  background-color: #abd2ef;
 }
 
 .slide-5:hover {
-  background-color: #f76c88;
+  background-color: #7cadd5;
 }
 
 .slide-6:hover {
-  background-color: #f19200;
+  background-color: #625efb;
 }
 
 .slide-7:hover {
-  background-color: #24807f;
+  background-color: #cf1b1a;
 }
 
 .slide-8:hover {
-  background-color: #5fc6b9;
+  background-color: #ff4342;
 }
 
 .slide-9:hover {
-  background-color: #418da2;
+  background-color: #abd2ef;
 }
 
 .slide-10:hover {
-  background-color: #2d8fab;
+  background-color: #7cadd5;
+}
+
+.slide-11:hover {
+  background-color: #625efb;
+}
+
+.slide-12:hover {
+  background-color: #7cadd5;
 }
 
 /* @media (min-width: 1401px) and (max-width: 1450px) {

@@ -41,9 +41,9 @@ const Hero = ({ data }) => {
       <div className="lg:container lg:mx-auto px-[5%] py-[1.5%]">
         <div className="mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
           <div className="flex flex-col items-center justify-between lg:flex-row">
-            <div className="mb-10 lg:max-w-lg lg:pr-5 lg:mb-0">
+            <div className="mb-10 lg:max-w-2xl lg:pr-5 lg:mb-0">
               <div className="max-w-xl mb-6">
-                <h2 className="mb-6 text-3xl sm:leading-none lg:text-[3.5rem] font-[700] tracking-tight text-[#127acc] ">
+                <h2 className="mb-6 text-3xl lg:text-[3.5rem] font-[700] tracking-tight leading-[1.2] text-[#127acc]">
                   {data?.title}
                 </h2>
                 <p className="text-[16px] lg:text-[20px] my-[44px] font-[400] md:mt-0">
