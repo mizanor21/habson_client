@@ -6,24 +6,39 @@ import Image from "next/image";
 import logo from "@/public/assets/logo/logo.png";
 import CareerDetailsLayout from "./layout";
 import ButtonEffect from "@/components/Custom/Button";
+import { useJobHeroData } from "@/components/Custom/DataFetch";
+import HashLoader from "react-spinners/HashLoader";
+
 const CareerDetails = () => {
+  const { data, error, isLoading } = useJobHeroData();
+
+  if (isLoading)
+    return (
+      <div className="flex justify-center items-center w-screen h-screen">
+        <HashLoader color="#357eeb" />
+      </div>
+    );
+  if (error) return <p>Error loading data</p>;
+
+  const { summary, title, description, image } = data[0] || {};
+
   return (
     <div className="relative z-[110] font-sora bg-white rounded-b-[20px] lg:rounded-b-[50px]">
       <div
-        className=" py-12 bg-cover bg-center w-[100%] h-[80vh] bg-no-repeat"
+        className="py-12 bg-cover bg-center w-[100%] h-[80vh] bg-no-repeat"
         style={{
-          backgroundImage: "url('https://i.postimg.cc/Dz5gZnRR/Picture1.jpg')",
+          backgroundImage: `url(${image})`,
         }}
       >
         <div className="flex items-center gap-5 text-white font-sora text-[16px] px-[5%]">
-          <Link target="_blank" href="/" className=" px-4 py-1 mr-5">
+          <Link target="_blank" href="/" className="px-4 py-1 mr-5">
             <Image
               src={logo}
               className="animate-bounce"
               width={200}
               height={200}
               alt="Habson Logo"
-            ></Image>
+            />
           </Link>
           <Link href="/career-details" className="text-[16px] font-[500]">
             HOME
@@ -44,17 +59,12 @@ const CareerDetails = () => {
         </div>
         <div className="flex mx-auto h-full justify-center items-center px-[5%]">
           <div>
-            <p className="text-white font-bold text-center mb-2">
-              Discover Your Dream Job
-            </p>
+            <p className="text-white font-bold text-center mb-2">{summary}</p>
             <h1 className="text-white font-bold text-4xl text-center mb-2">
-              More Than Just a Job, We’re a Community
+              {title}
             </h1>
             <p className="text-center max-w-[900px] text-white text-justify">
-              We understand that finding a fulfilling career can be challenging.
-              Our mission is to simplify this process and offer a workplace
-              you&apos;ll enjoy coming to. Explore our job openings to start
-              your journey.
+              {description}
             </p>
             <div className="flex justify-center mt-5">
               <a

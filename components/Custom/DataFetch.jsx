@@ -21,6 +21,14 @@ export const useItemDetailsData = ({ params }) => {
   return { data, error, isLoading: !data && !error };
 };
 
+export const useJobHeroData = () => {
+  const { data, error } = useSWR(
+    "https://habson-admin.vercel.app/api/job-hero",
+    fetcher
+  );
+  return { data, error, isLoading: !data && !error };
+};
+
 export const useJobsData = () => {
   const { data, error } = useSWR(
     "https://habson-admin.vercel.app/api/jobs",
