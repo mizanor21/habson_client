@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react";
 import ButtonEffect from "@/components/Custom/Button";
 import { useItemsData } from "@/components/Custom/DataFetch";
 import Items from "@/components/Items/Items";
+import { HashLoader } from "react-spinners";
 
 const Works = () => {
   // State for storing all data and filtered data
@@ -30,7 +31,11 @@ const Works = () => {
   };
 
   if (isLoading) {
-    return <div className="h-screen">Loading...</div>;
+    return (
+      <div className="flex justify-center h-screen pt-10">
+        <HashLoader color="#127acc" />
+      </div>
+    );
   }
 
   if (error) {
