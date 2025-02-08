@@ -68,7 +68,7 @@ const ColorPalette = () => {
                     <Image
                       width={400}
                       height={450}
-                      className="w-full object-cover"
+                      className="w-full"
                       src={color.imageUrl} // Assuming color data includes imageUrl
                       alt={color.title}
                       style={{
