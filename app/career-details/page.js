@@ -1,6 +1,5 @@
 "use client";
 import React from "react";
-import "./careerdetails.css";
 import JobListings from "./JobListings";
 import Link from "next/link";
 import Image from "next/image";
@@ -9,8 +8,13 @@ import CareerDetailsLayout from "./layout";
 import ButtonEffect from "@/components/Custom/Button";
 const CareerDetails = () => {
   return (
-    <div className="relative z-[110] font-sora bg-white rounded-b-[20px] lg:rounded-b-[50px] ">
-      <div className="career-details py-12">
+    <div className="relative z-[110] font-sora bg-white rounded-b-[20px] lg:rounded-b-[50px]">
+      <div
+        className=" py-12 bg-cover bg-center w-[100%] h-[80vh] bg-no-repeat"
+        style={{
+          backgroundImage: "url('https://i.postimg.cc/Dz5gZnRR/Picture1.jpg')",
+        }}
+      >
         <div className="flex items-center gap-5 text-white font-sora text-[16px] px-[5%]">
           <Link target="_blank" href="/" className=" px-4 py-1 mr-5">
             <Image
