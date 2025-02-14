@@ -61,7 +61,7 @@ const Elevate = ({ data }) => {
           className="flex justify-center items-center min-h-60 lg:h-[30vh] rounded-lg md:rounded-badge"
         >
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 items-center p-[5%]">
-            {/* defineHeading text-2xl mx-3 md:mx-0 lg:text-[54px] font-bold lg:pr-5 mb-2 text-[#127acc] leading-[1.1] */}
+            {/* defineHeading text-2xl mx-3 md:mx-0 lg:text-[54px] font-bold lg:pr-5 mb-2 text-[#0066B3] leading-[1.1] */}
             <h2 className="text-2xl md:text-4xl lg:text-[48px] font-medium text-white lg:pr-5 ">
               <p className="leading-[1.1]">{data?.title}</p>
             </h2>
@@ -72,12 +72,12 @@ const Elevate = ({ data }) => {
               <div className="mt-5">
                 <Link href={"/contact"}>
                   <div
-                    className="btn-posnawr max-w-[250px] relative flex justify-center items-center gap-2 rounded-full py-4 px-8 text-center text-lg text-[#127acc] border-2 border-transparent hover:border-white bg-white hover:text-white z-[20] overflow-hidden transition-colors duration-300 ease-in-out"
+                    className="btn-posnawr max-w-[250px] relative flex justify-center items-center gap-2 rounded-full py-4 px-8 text-center text-lg text-[#0066B3] border-2 border-transparent hover:border-white bg-white hover:text-white z-[20] overflow-hidden transition-colors duration-300 ease-in-out"
                     onMouseEnter={handleMouseEnter}
                     onMouseLeave={handleMouseLeave}
                   >
                     <span
-                      className="absolute block bg-[#127acc] rounded-full transition-all ease-in-out duration-700 z-0"
+                      className="absolute block bg-[#0066B3] rounded-full transition-all ease-in-out duration-700 z-0"
                       style={{
                         width: "0",
                         height: "0",

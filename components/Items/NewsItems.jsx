@@ -95,7 +95,7 @@ const NewsItems = ({ data }) => {
                     transform: "translate(-50%, -50%)",
                   }}
                 >
-                  <div className="bg-[#127acc] text-white overflow-hidden w-full h-full rounded-full flex justify-center items-center relative">
+                  <div className="bg-[#0066B3] text-white overflow-hidden w-full h-full rounded-full flex justify-center items-center relative">
                     <p style={scrollAnimation}>View Case study</p>
                   </div>
                 </div>
@@ -114,17 +114,17 @@ const NewsItems = ({ data }) => {
           onPageChange={handlePageChange}
           containerClassName={"flex space-x-4 items-center"}
           previousLinkClassName={
-            "w-10 h-10 flex items-center justify-center rounded-full border border-gray-300 text-gray-600  hover:bg-gradient-to-r hover:from-[#127acc] hover:to-indigo-500 transition-all duration-300"
+            "w-10 h-10 flex items-center justify-center rounded-full border border-gray-300 text-gray-600  hover:bg-gradient-to-r hover:from-[#0066B3] hover:to-indigo-500 transition-all duration-300"
           }
           nextLinkClassName={
-            "w-10 h-10 flex items-center justify-center rounded-full border border-gray-300 text-gray-600  hover:bg-gradient-to-r hover:from-[#127acc] hover:to-indigo-500 transition-all duration-300"
+            "w-10 h-10 flex items-center justify-center rounded-full border border-gray-300 text-gray-600  hover:bg-gradient-to-r hover:from-[#0066B3] hover:to-indigo-500 transition-all duration-300"
           }
           disabledClassName={"opacity-50 cursor-not-allowed"}
           activeClassName={
-            "text-white bg-gradient-to-r from-[#127acc] to-indigo-500 rounded-full  shadow-md scale-110"
+            "text-white bg-gradient-to-r from-[#0066B3] to-indigo-500 rounded-full  shadow-md scale-110"
           }
           pageLinkClassName={
-            "w-10 h-10 flex items-center justify-center rounded-full border border-gray-300 text-gray-600  hover:bg-gradient-to-r hover:from-[#127acc] hover:to-indigo-500 transition-all duration-300"
+            "w-10 h-10 flex items-center justify-center rounded-full border border-gray-300 text-gray-600  hover:bg-gradient-to-r hover:from-[#0066B3] hover:to-indigo-500 transition-all duration-300"
           }
         />
       </div>

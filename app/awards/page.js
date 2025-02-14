@@ -26,7 +26,7 @@ const HorizontalScrollCarousel = () => {
         ref={targetRef}
         className="hidden md:block bg-white relative z-[110] rounded-b-[50px] h-[300vh]   py-20"
       >
-        <h2 className="text-2xl md:text-4xl text-[#127acc] font-bold text-center">
+        <h2 className="text-2xl md:text-4xl text-[#0066B3] font-bold text-center">
           Our Valuable Awards
         </h2>
         <div className="sticky top-0 flex  items-center overflow-hidden">

@@ -6,7 +6,7 @@ import ButtonEffect from "@/components/Custom/Button";
 const CareerSection = () => {
   return (
     <div className="bg-white py-10 lg:py-20 font-sora">
-      <h1 className="text-3xl md:text-2xl lg:text-[48px] font-bold text-[#127acc] mb-5">
+      <h1 className="text-3xl md:text-2xl lg:text-[48px] font-bold text-[#0066B3] mb-5">
         Career
       </h1>
       <p className="text-[16px] lg:text-[18px] font-[400] text-black mb-8">

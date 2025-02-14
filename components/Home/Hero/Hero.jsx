@@ -43,7 +43,7 @@ const Hero = ({ data }) => {
           <div className="flex flex-col items-center justify-between lg:flex-row">
             <div className="mb-10 lg:max-w-2xl lg:pr-5 lg:mb-0">
               <div className="max-w-xl mb-6">
-                <h2 className="mb-6 text-3xl lg:text-[3.5rem] font-[700] tracking-tight leading-[1.2] text-[#127acc]">
+                <h2 className="mb-6 text-3xl lg:text-[3.5rem] font-[700] tracking-tight leading-[1.2] text-[#0066B3]">
                   {data?.title}
                 </h2>
                 <p className="text-[16px] lg:text-[20px] my-[44px] font-[400] md:mt-0">

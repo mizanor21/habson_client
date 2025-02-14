@@ -46,7 +46,7 @@ const News = () => {
   return (
     <div className="bg-white relative z-[110] rounded-b-[40px] pb-10 lg:pb-20 font-sora">
       <div className=" pb-10">
-        <h2 className="px-[5%] text-2xl text-center md:text-4xl xl:text-[42px] 2xl:text-[48px] leading-10 text-[#127acc] font-bold py-8 lg:pt-[80px] xl:pb-[65px] 2xl:pb-[80px]">
+        <h2 className="px-[5%] text-2xl text-center md:text-4xl xl:text-[42px] 2xl:text-[48px] leading-10 text-[#0066B3] font-bold py-8 lg:pt-[80px] xl:pb-[65px] 2xl:pb-[80px]">
           Habson In The News
         </h2>
         <div className="md:hidden">
@@ -57,8 +57,8 @@ const News = () => {
             onClick={() => handleCategoryChange("Casestudy")}
             className={`px-5 py-[10px] rounded-full text-[12px] lg:text-sm font-[400] lg:font-semibold transition-all duration-300 ${
               selectedCategory === "Casestudy"
-                ? "bg-[#127acc] text-white"
-                : "border-2 border-[#127acc] text-[#127acc] hover:bg-[#127acc] hover:text-white"
+                ? "bg-[#0066B3] text-white"
+                : "border-2 border-[#0066B3] text-[#0066B3] hover:bg-[#0066B3] hover:text-white"
             }`}
           >
             Press Releases
@@ -67,8 +67,8 @@ const News = () => {
             onClick={() => handleCategoryChange("Daily Creativity")}
             className={`px-5 py-[10px] rounded-full text-[12px] lg:text-sm font-[400] lg:font-semibold transition-all duration-300 ${
               selectedCategory === "Daily Creativity"
-                ? "bg-[#127acc] text-white"
-                : "border-2 border-[#127acc] text-[#127acc] hover:bg-[#127acc] hover:text-white"
+                ? "bg-[#0066B3] text-white"
+                : "border-2 border-[#0066B3] text-[#0066B3] hover:bg-[#0066B3] hover:text-white"
             }`}
           >
             Media Features

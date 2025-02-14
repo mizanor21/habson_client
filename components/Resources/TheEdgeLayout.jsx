@@ -7,7 +7,7 @@ const TheEdgeLayout = ({ data }) => {
     <div className="px-[5%] bg-white relative z-[110] py-10 lg:py-20 rounded-b-[20px] lg:rounded-b-[40px] text-black">
       <div className=" mb-10 font-sora">
         <>
-          <h1 className="text-[24px] md:text-4xl lg:text-[48px] text-[#127acc] font-bold mb-8">
+          <h1 className="text-[24px] md:text-4xl lg:text-[48px] text-[#0066B3] font-bold mb-8">
             Welcome to the Edge!
           </h1>
           <p className="text-[16px] lg:text-[18px] ">
@@ -37,7 +37,7 @@ const TheEdgeLayout = ({ data }) => {
                 i % 2 === 0 ? "order-1" : "md:order-2"
               }`}
             >
-              <h1 className="text-2xl font-bold mt-1 md:text-3Xl lg:text-[48px] text-[#127acc] mb-5 leading-[1.1]">
+              <h1 className="text-2xl font-bold mt-1 md:text-3Xl lg:text-[48px] text-[#0066B3] mb-5 leading-[1.1]">
                 {edge.title}
               </h1>
               {edge.description.map((desc, idx) => (

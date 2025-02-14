@@ -15,7 +15,7 @@ const CSR = () => {
       </div>
 
       <div className="py-5 w-[100%] mx-auto text-[15px]">
-        <h2 className="font-bold text-[20px] md:text-[34px] text-[#127acc] my-5 lg:hidden">
+        <h2 className="font-bold text-[20px] md:text-[34px] text-[#0066B3] my-5 lg:hidden">
           Habson DIGITAL SOLUTIONS PRIVATE LIMITED (“Habson”) CSR POLICY
         </h2>
         <h3>

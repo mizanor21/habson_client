@@ -4,7 +4,7 @@ const PartnerSection = ({ partnersData }) => {
   return (
     <div className="bg-white pb-10 relative z-[110] rounded-b-[20px] lg:rounded-b-[40px] font-sora">
       <div className="px-[5%]">
-        <h2 className="text-2xl md:text-[36px] lg:text-[48px] font-bold text-[#127acc] leading-[1.2]">
+        <h2 className="text-2xl md:text-[36px] lg:text-[48px] font-bold text-[#0066B3] leading-[1.2]">
           Leveraging Cutting-Edge Technology for Unparalleled Results.
         </h2>
 

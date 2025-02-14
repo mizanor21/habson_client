@@ -155,9 +155,9 @@ const Nav = () => {
             {/* Logo Section */}
             <Link href="/" className="w-[100%] flex items-center gap-2">
               <Image src={logo} className="w-[100px]" alt="Habson logo"></Image>
-              <h1 className="animate-pulse rounded-full bg-[#127acc] w-[5px] h-[5px]"></h1>
+              <h1 className="animate-pulse rounded-full bg-[#0066B3] w-[5px] h-[5px]"></h1>
               <WordRotate
-                className="text-[12px] md:text-lg text-[#127acc] font-[600] p-0 m-0 w-full"
+                className="text-[12px] md:text-lg text-[#0066B3] font-[600] p-0 m-0 w-full"
                 words={[
                   "Brands",
                   "Tech",
@@ -507,10 +507,10 @@ const Nav = () => {
         </div>
 
         {/* Main Nav Links */}
-        <div className="flex justify-between gap-7 w-full items-center text-[#127acc] font-sora font-[500] text-[14px] h-full pt-7 max-[991px]:hidden">
+        <div className="flex justify-between gap-7 w-full items-center text-[#0066B3] font-sora font-[500] text-[14px] h-full pt-7 max-[991px]:hidden">
           {/* Logo */}
           <div className="navber-logo z-[210]  ">
-            <div className={`flex items-end gap-[5px] text-[#127acc]`}>
+            <div className={`flex items-end gap-[5px] text-[#0066B3]`}>
               <Link href="/" onClick={() => handleNavigations("/")}>
                 <Image
                   src={logo}
@@ -518,7 +518,7 @@ const Nav = () => {
                   alt="Habson logo"
                 ></Image>
               </Link>
-              <h1 className="rounded-full bg-[#127acc] w-[5px] h-[5px] 2xl:w-[7px] 2xl:h-[7px] animate-pulse font-bold mb-[3px] 2xl:mb-[5xp]"></h1>
+              <h1 className="rounded-full bg-[#0066B3] w-[5px] h-[5px] 2xl:w-[7px] 2xl:h-[7px] animate-pulse font-bold mb-[3px] 2xl:mb-[5xp]"></h1>
 
               <WordRotate
                 className="text-[11px] xl:text-[13px] 2xl:text-[16px]  font-[600] p-0 m-0 w-full"
@@ -797,7 +797,7 @@ const Nav = () => {
                                   transform: "translate(-50%, -50%)", // Center under the mouse
                                 }}
                               >
-                                <div className="bg-[#127acc] text-white overflow-hidden w-full h-full rounded-full flex justify-center items-center relative">
+                                <div className="bg-[#0066B3] text-white overflow-hidden w-full h-full rounded-full flex justify-center items-center relative">
                                   <p style={scrollAnimation}>View Case study</p>
                                 </div>
                               </div>
@@ -889,7 +889,7 @@ const Nav = () => {
                                 transform: "translate(-50%, -50%)", // Center under the mouse
                               }}
                             >
-                              <div className="bg-[#127acc] text-white overflow-hidden w-full h-full rounded-full flex justify-center items-center relative">
+                              <div className="bg-[#0066B3] text-white overflow-hidden w-full h-full rounded-full flex justify-center items-center relative">
                                 <p style={scrollAnimation}>View Blog</p>
                               </div>
                             </div>

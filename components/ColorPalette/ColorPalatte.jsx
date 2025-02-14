@@ -62,7 +62,7 @@ const ColorPalette = () => {
               {colors.map((color) => (
                 <div
                   key={color.id}
-                  className="group w-[26rem] overflow-hidden border hover:-translate-y-5 duration-500 mt-5 bg-white"
+                  className="group w-[24rem] xl:w-[25rem] 2xl:w-[30rem] overflow-hidden border hover:-translate-y-5 duration-500 mt-5 bg-white"
                 >
                   <div>
                     <Image
@@ -78,7 +78,7 @@ const ColorPalette = () => {
                   </div>
                   <div className="p-[25px] h-[300px] relative ">
                     <div className="text-center">
-                      <h2 className="text-[22px] font-bold text-[#127acc]">
+                      <h2 className="text-[22px] font-bold text-[#0066B3]">
                         {color.title}
                       </h2>
                       <p className="text-[16px] group-hover:text-black py-2">
@@ -107,7 +107,7 @@ const ColorPalette = () => {
               />
             </div>
             <div className="mt-6 mb-20">
-              <h2 className="text-[24px] font-[700] text-[#127acc]">
+              <h2 className="text-[24px] font-[700] text-[#0066B3]">
                 {color.title}
               </h2>
               <p className="text-[16px] font-[500] py-4">{color.description}</p>

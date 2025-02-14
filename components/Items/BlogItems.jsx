@@ -80,7 +80,7 @@ const BlogItems = ({ data }) => {
                   transform: "translate(-50%, -50%)", // Center under the mouse
                 }}
               >
-                <div className="bg-[#127acc] text-white overflow-hidden w-full h-full rounded-full flex justify-center items-center relative">
+                <div className="bg-[#0066B3] text-white overflow-hidden w-full h-full rounded-full flex justify-center items-center relative">
                   <p style={scrollAnimation}>Read now Read now</p>
                   <p style={scrollAnimation2} className="opacity-60">
                     Read now

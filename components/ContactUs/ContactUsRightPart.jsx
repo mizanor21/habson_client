@@ -81,8 +81,8 @@ const ContactUsRightPart = () => {
       />
       <form onSubmit={handleSubmit} className="font-sora text-black">
         {/* Form Fields */}
-        <p className="text-[16px] my-2 text-[#127acc]">GOT AN IDEA?</p>
-        <h1 className="text-[24px] lg:text-[30px] font-bold my-2 text-[#127acc]">
+        <p className="text-[16px] my-2 text-[#0066B3]">GOT AN IDEA?</p>
+        <h1 className="text-[24px] lg:text-[30px] font-bold my-2 text-[#0066B3]">
           Drop us a message!
         </h1>
         <p className="text-[16px] text-[#1f2937] my-2">
@@ -90,7 +90,7 @@ const ContactUsRightPart = () => {
           email with your details and requirements to
           <a
             href="mailto:habib@habson.org"
-            className="text-[#127acc] hover:underline ml-1"
+            className="text-[#0066B3] hover:underline ml-1"
           >
             habib@habson.org
           </a>

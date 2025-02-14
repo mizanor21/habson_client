@@ -12,12 +12,12 @@ body {
 
 @layer utilities {
   .scrollbar {
-    @apply scrollbar-thin scrollbar-thumb-[#127acc] scrollbar-track-gray-100 border border-[#127acc];
+    @apply scrollbar-thin scrollbar-thumb-[#0066B3] scrollbar-track-gray-100 border border-[#0066B3];
   }
 }
 
 ::selection {
-  background-color: #127acc;
+  background-color: #0066B3;
   color: white;
 }
 

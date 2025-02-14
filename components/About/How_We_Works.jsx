@@ -4,14 +4,14 @@ const HowWeWorks = () => {
   return (
     <div className="relative z-[110] bg-white font-sora">
       <div className="">
-        <h1 className="text-[24px] lg:text-3xl font-bold text-[#127acc] py-[5%] lg:pt-[80px] lg:pb-[60px] md:text-3xl lg:text-[48px] leading-tight lg:leading-tight">
+        <h1 className="text-[24px] lg:text-3xl font-bold text-[#0066B3] py-[5%] lg:pt-[80px] lg:pb-[60px] md:text-3xl lg:text-[48px] leading-tight lg:leading-tight">
           Amplifying your vision is our mission. Choose Habson Communication. 
         </h1>
         <hr className="w-full text-gray-400" />
         <div>
           <div className="md:flex gap-5">
             <div className="mt-10 lg:mt-16 hidden md:block">
-              <p className="text-xl lg:text-[24px] font-bold md:leading-[1.5] text-[#127acc]">
+              <p className="text-xl lg:text-[24px] font-bold md:leading-[1.5] text-[#0066B3]">
                 Crafting Unforgettable Experiences, Highlighting
                 Bangladesh&apos;s Creative Powerhouse.
               </p>

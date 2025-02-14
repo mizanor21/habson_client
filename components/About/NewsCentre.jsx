@@ -91,7 +91,7 @@ const NewsCenter = ({ data }) => {
                   transform: "translate(-50%, -50%)",
                 }}
               >
-                <div className="bg-[#127acc] text-white overflow-hidden w-full h-full rounded-full flex justify-center items-center relative">
+                <div className="bg-[#0066B3] text-white overflow-hidden w-full h-full rounded-full flex justify-center items-center relative">
                   <p style={scrollAnimation}>View Case study</p>
                 </div>
               </div>

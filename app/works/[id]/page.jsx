@@ -11,7 +11,7 @@ const WorkDetails = ({ params }) => {
   if (isLoading) {
     return (
       <div className="flex justify-center h-screen pt-10">
-        <HashLoader color="#127acc" />
+        <HashLoader color="#0066B3" />
       </div>
     );
   }
@@ -24,7 +24,7 @@ const WorkDetails = ({ params }) => {
   return (
     <div className="flex flex-col px-4 lg:px-[100px] font-sora bg-white relative z-[120] rounded-b-[20px] lg:rounded-b-[40px]">
       {/* Header Section */}
-      <div className="w-full flex flex-col gap-3 text-[#127acc] justify-start mt-16">
+      <div className="w-full flex flex-col gap-3 text-[#0066B3] justify-start mt-16">
         <p className="text-[19px]">Case study</p>
         <h1 className="font-bold text-[24px] lg:text-[48px]">{title}</h1>
         {/* <p className="text-lg text-gray-600">{detailsTitle}</p> */}
@@ -48,7 +48,7 @@ const WorkDetails = ({ params }) => {
         {/* Services List */}
         <div className="w-full lg:w-[30%] flex flex-col gap-10 lg:mb-0 mb-5">
           <div className="flex flex-col gap-4">
-            <h1 className="font-bold text-[20px] xl:text-[30px] text-[#127acc]">
+            <h1 className="font-bold text-[20px] xl:text-[30px] text-[#0066B3]">
               Services
             </h1>
             <ul className="list-none space-y-4 text-[15px]">

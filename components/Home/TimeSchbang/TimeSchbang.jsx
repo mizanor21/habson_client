@@ -52,15 +52,15 @@ const TimeSchbang = () => {
                 className="w-10 animate-spin"
               />
               <h1
-                className="font-sans"
+                className="font-sans uppercase"
                 style={{
                   fontSize: "30px",
                   fontWeight: 900,
                   color: "transparent",
-                  WebkitTextStroke: "1px #127acc",
+                  WebkitTextStroke: "1px #0066B3",
                 }}
               >
-                IT&apos;S TIME TO CREATE A Habson
+                IT&apos;S TIME TO CREATE A HABSON
               </h1>
             </React.Fragment>
           ))}
@@ -78,7 +78,7 @@ const TimeSchbang = () => {
                   fontSize: "30px",
                   fontWeight: 900,
                   color: "transparent",
-                  WebkitTextStroke: "1px #127acc",
+                  WebkitTextStroke: "1px #0066B3",
                 }}
               >
                 IT&apos;S TIME TO CREATE A HABSON

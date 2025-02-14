@@ -12,7 +12,7 @@ const BlogDetails = ({ params }) => {
   if (isLoading) {
     return (
       <div className="flex justify-center h-screen pt-10">
-        <HashLoader color="#127acc" />
+        <HashLoader color="#0066B3" />
       </div>
     );
   }

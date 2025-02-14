@@ -128,7 +128,7 @@ const Partner = () => {
           }`}
           customLeftArrow={
             <div
-              className="hidden cursor-pointer absolute top-1/2 transform -translate-y-1/2 left-0 bg-[#127acc] text-white lg:flex justify-center items-center text-xl w-12 h-12 lg:w-16 lg:h-16 rounded-full transition-transform duration-300"
+              className="hidden cursor-pointer absolute top-1/2 transform -translate-y-1/2 left-0 bg-[#0066B3] text-white lg:flex justify-center items-center text-xl w-12 h-12 lg:w-16 lg:h-16 rounded-full transition-transform duration-300"
               style={{
                 left: `${arrowPosition.left}px`,
                 transform: "translateX(-50%)",
@@ -139,7 +139,7 @@ const Partner = () => {
           }
           customRightArrow={
             <div
-              className="hidden cursor-pointer absolute top-1/2 transform -translate-y-1/2 right-0 bg-[#127acc] text-white lg:flex justify-center items-center text-xl w-12 h-12 lg:w-16 lg:h-16 rounded-full transition-transform duration-300"
+              className="hidden cursor-pointer absolute top-1/2 transform -translate-y-1/2 right-0 bg-[#0066B3] text-white lg:flex justify-center items-center text-xl w-12 h-12 lg:w-16 lg:h-16 rounded-full transition-transform duration-300"
               style={{
                 left: `${arrowPosition.right}px`,
                 transform: "translateX(50%)",

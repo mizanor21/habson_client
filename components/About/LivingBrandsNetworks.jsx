@@ -16,7 +16,7 @@ const LivingBrandsNetworks = ({ shortDescription, items, brand }) => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10 lg:mb-20">
         {/* Left Side */}
         <div>
-          <h2 className="text-3xl md:text-4xl lg:text-[48px] text-[#127acc] leading-[1.1] lg:leading-[1.2] font-bold mb-7 md:mb-10 transition duration-300 ease-in-out transform">
+          <h2 className="text-3xl md:text-4xl lg:text-[48px] text-[#0066B3] leading-[1.1] lg:leading-[1.2] font-bold mb-7 md:mb-10 transition duration-300 ease-in-out transform">
             Habson Network & Partnerships
           </h2>
 
@@ -50,7 +50,7 @@ const LivingBrandsNetworks = ({ shortDescription, items, brand }) => {
           {items?.map((item, index) => (
             <div key={item._id} className="border-b border-gray-300">
               <button
-                className="w-full flex justify-between items-center py-4 text-[16px] font-semibold text-[#127acc] text-left transition duration-300 ease-in-out transform hover:text-[#0d4a4c]"
+                className="w-full flex justify-between items-center py-4 text-[16px] font-semibold text-[#0066B3] text-left transition duration-300 ease-in-out transform hover:text-[#0d4a4c]"
                 onClick={() => toggle(index)}
               >
                 {item.title}
