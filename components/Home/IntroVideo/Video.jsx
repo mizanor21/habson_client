@@ -111,7 +111,7 @@ const Video = ({ data }) => {
             muted={isFirstVisit} // Muted only on the first visit
             onClick={handleVideoClick} // Toggle play/pause on click
           >
-            <source src="/videos/Intro.mp4" type="video/mp4" />
+            <source src={data?.videoURL} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>

@@ -36,6 +36,7 @@ export default async function Home() {
     brandSection = {},
   } = home[0] || {};
 
+
   return (
     <main className="bg-white relative z-[110] rounded-b-[20px] lg:rounded-b-[40px]">
       <Hero data={heroSection} />
