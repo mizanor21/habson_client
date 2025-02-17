@@ -33,34 +33,27 @@ const Solutions = ({ data }) => {
   const [offset, setOffset] = useState(0);
   const animationFrameRef = useRef(null);
 
-  const totalCards = data?.solutions?.length;
+  const totalCards = data?.length;
   const cardWidth = 1300;
   const cardMargin = 8;
   const totalWidth = (cardWidth + cardMargin) * totalCards;
 
   const handleMouseMove = (e) => {
-    if (animationFrameRef.current) {
-      cancelAnimationFrame(animationFrameRef.current);
-    }
+    const { clientX } = e;
+    const screenWidth = window.innerWidth;
+    const progress = (0.38 * clientX) / screenWidth;
 
-    animationFrameRef.current = requestAnimationFrame(() => {
-      const { clientX } = e;
-      const screenWidth = window.innerWidth;
-      const progress = (0.38 * clientX) / screenWidth;
+    // Calculate the max scroll to stop when the last card is fully visible
+    const maxScroll = Math.min(
+      0,
+      screenWidth - totalWidth + (cardWidth + cardMargin) * 0.1
+    ); // Shows 3 full cards and half of the 4th
 
-      // Calculate the max scroll to stop when the last card is fully visible
-      const maxScroll = Math.min(
-        0,
-        screenWidth - totalWidth + (cardWidth + cardMargin) * 0.1
-      );
+    // Calculate the new offset and clamp it
+    const newOffset = Math.max(maxScroll, progress * maxScroll);
 
-      // Calculate the new offset and clamp it
-      const newOffset = Math.max(maxScroll, progress * maxScroll);
-
-      setOffset(newOffset);
-    });
+    setOffset(newOffset);
   };
-
   useEffect(() => {
     window.addEventListener("mousemove", handleMouseMove);
 
@@ -82,7 +75,7 @@ const Solutions = ({ data }) => {
             width: `${totalWidth}px`,
           }}
         >
-          {data?.solutions?.map((section, index) => (
+          {data?.map((section, index) => (
             <Link href={`${section?.path}`} key={index}>
               <Card section={section} />
             </Link>
@@ -92,7 +85,7 @@ const Solutions = ({ data }) => {
       {/* Mobile */}
       <div className="bg-white md:hidden font-sora ">
         <div className="bg-white relative z-[110]">
-          {data?.solutions?.map((section, sectionIndex) => (
+          {data?.map((section, sectionIndex) => (
             <div
               key={sectionIndex}
               className={`hover-container ${section?.id} hover:text-white group pt-3`}

@@ -36,6 +36,12 @@ export default async function Home() {
     brandSection = {},
   } = home[0] || {};
 
+  const res1 = await fetch("https://habson-admin.vercel.app/api/mouse-movement", {
+    next: { revalidate },
+  });
+
+  const mouseMovement = await res1.json();
+
 
   return (
     <main className="bg-white relative z-[110] rounded-b-[20px] lg:rounded-b-[40px]">
@@ -44,7 +50,7 @@ export default async function Home() {
       <Elevate data={elevateSection} />
       <Define data={defineUsSection} />
       <Slideshow data={slideshowSection} />
-      <Solutions data={solutionSection} />
+      <Solutions data={mouseMovement} />
       <Journey data={journeySection} />
       <Brands data={brandSection} />
       <Trending />
