@@ -620,11 +620,11 @@ const Nav = () => {
                           >
                             <div className="card_image">
                               <Image
-                                className="rounded-2xl"
+                                className="rounded-xl object-cover w-full max-h-96"
                                 src={item.img}
                                 alt={index}
                                 width={700}
-                                height={500}
+                                height={400}
                               />
                             </div>
                             <p className="font-[400] md:text-[14px] min-[1500px]:text-[15px] min-[1600px]:text-[16px] min-[1700px]:text-[17px] min-[1800px]:text-[19px] mt-2">
@@ -773,11 +773,11 @@ const Nav = () => {
                           >
                             <div className="card_image ">
                               <Image
-                                className="rounded-2xl "
+                                className="rounded-xl object-cover w-full max-h-96"
                                 src={item?.img}
                                 alt={item?.title}
                                 width={700}
-                                height={300}
+                                height={400}
                               />
                             </div>
 
@@ -865,11 +865,11 @@ const Nav = () => {
                         >
                           <div className="card_image">
                             <Image
-                              className="rounded-2xl "
+                              className="rounded-xl object-cover w-full max-h-96"
                               src={item?.img}
                               alt={item?.title}
                               width={700}
-                              height={500}
+                              height={400}
                             />
                           </div>
 

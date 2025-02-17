@@ -68,10 +68,10 @@ const Items = ({ data }) => {
           >
             <Image
               src={item.img}
-              alt=""
+              alt={item.title}
               width={600}
-              height={100}
-              className="rounded-xl"
+              height={400}
+              className="rounded-xl object-cover w-full max-h-80"
             />
             <h2 className="text-[14px] lg:text-[16px] font-[700] mt-2">
               {item.title}
