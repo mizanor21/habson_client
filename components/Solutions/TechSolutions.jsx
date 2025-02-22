@@ -68,7 +68,7 @@ const TechSolutions = ({ shortDescription, items, brands }) => {
                   open === index ? "max-h-96" : "max-h-0"
                 }`}
               >
-                <div className="py-2 text-gray-700 pb-7 text-[14px] font-normal whitespace-pre-wrap">
+                <div className="py-2 text-gray-700 pb-7 transition-opacity duration-300 ease-in-out whitespace-pre-wrap">
                   {item.content}
                 </div>
               </div>
