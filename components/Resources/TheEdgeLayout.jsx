@@ -31,12 +31,17 @@ const TheEdgeLayout = ({ data }) => {
               i % 2 === 1 ? "md:flex-row-reverse" : ""
             }`}
           >
+            {/* Image Content */}
+            <div className="order-1 md:order-2">
+              <img
+                src={edge.image}
+                alt="Edge Image"
+                className="rounded-lg w-full max-w-xs md:max-w-full"
+              />
+            </div>
+
             {/* Text Content */}
-            <div
-              className={`flex flex-col justify-center ${
-                i % 2 === 0 ? "order-1" : "md:order-2"
-              }`}
-            >
+            <div className="order-2 md:order-1">
               <h1 className="text-2xl font-bold mt-1 md:text-3Xl lg:text-[48px] text-[#0066B3] mb-5 leading-[1.1]">
                 {edge.title}
               </h1>
@@ -55,19 +60,6 @@ const TheEdgeLayout = ({ data }) => {
                   </ButtonEffect>
                 </Link>
               </div>
-            </div>
-
-            {/* Image Content */}
-            <div
-              className={`flex justify-center items-center ${
-                i % 2 === 0 ? "order-2" : "order-1"
-              }`}
-            >
-              <img
-                src={edge.image}
-                alt="Edge Image"
-                className="rounded-lg w-full max-w-xs md:max-w-full"
-              />
             </div>
           </div>
         ))}
