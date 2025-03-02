@@ -42,6 +42,12 @@ export default async function Home() {
 
   const mouseMovement = await res1.json();
 
+  const res2 = await fetch("https://habson-admin.vercel.app/api/slideshow", {
+    next: { revalidate },
+  });
+
+  const slideShow = await res2.json();
+
 
   return (
     <main className="bg-white relative z-[110] rounded-b-[20px] lg:rounded-b-[40px]">
@@ -49,7 +55,7 @@ export default async function Home() {
       <Video data={videoSection} />
       <Elevate data={elevateSection} />
       <Define data={defineUsSection} />
-      <Slideshow data={slideshowSection} />
+      <Slideshow data={slideShow} />
       <Solutions data={mouseMovement} />
       <Journey data={journeySection} />
       <Brands data={brandSection} />
