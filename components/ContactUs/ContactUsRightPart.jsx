@@ -42,7 +42,7 @@ const ContactUsRightPart = () => {
 
     try {
       const response = await fetch(
-        "https://habson-admin.vercel.app/api/contact",
+        "https://admin.habson.org/api/contact",
         {
           method: "POST", // Removed "no-cors" to access response data
           headers: {

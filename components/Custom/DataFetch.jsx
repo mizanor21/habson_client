@@ -5,7 +5,7 @@ const fetcher = (url) => fetch(url).then((res) => res.json());
 
 export const useItemsData = () => {
   const { data, error } = useSWR(
-    "https://habson-admin.vercel.app/api/works",
+    "https://admin.habson.org/api/works",
     fetcher
   );
   return { data, error, isLoading: !data && !error };
@@ -14,7 +14,7 @@ export const useItemsData = () => {
 export const useItemDetailsData = ({ params }) => {
   const { data, error } = useSWR(
     params?.id
-      ? `https://habson-admin.vercel.app/api/works/${params.id}`
+      ? `https://admin.habson.org/api/works/${params.id}`
       : null,
     fetcher
   );
@@ -23,7 +23,7 @@ export const useItemDetailsData = ({ params }) => {
 
 export const useJobHeroData = () => {
   const { data, error } = useSWR(
-    "https://habson-admin.vercel.app/api/job-hero",
+    "https://admin.habson.org/api/job-hero",
     fetcher
   );
   return { data, error, isLoading: !data && !error };
@@ -31,7 +31,7 @@ export const useJobHeroData = () => {
 
 export const useJobsData = () => {
   const { data, error } = useSWR(
-    "https://habson-admin.vercel.app/api/jobs",
+    "https://admin.habson.org/api/jobs",
     fetcher
   );
   return { data, error, isLoading: !data && !error };
@@ -39,7 +39,7 @@ export const useJobsData = () => {
 
 export const useBlogsData = () => {
   const { data, error } = useSWR(
-    "https://habson-admin.vercel.app/api/blogs",
+    "https://admin.habson.org/api/blogs",
     fetcher
   );
   return { data, error, isLoading: !data && !error };
@@ -48,7 +48,7 @@ export const useBlogsData = () => {
 export const useBlogDetailsData = ({ params }) => {
   const { data, error } = useSWR(
     params?.id
-      ? `https://habson-admin.vercel.app/api/blogs/${params.id}`
+      ? `https://admin.habson.org/api/blogs/${params.id}`
       : null,
     fetcher
   );

@@ -4,7 +4,7 @@ import React from "react";
 const page = async () => {
   // Fetching data from the API
   const res = await fetch(
-    "https://habson-admin.vercel.app/api/brand-solutions",
+    "https://admin.habson.org/api/brand-solutions",
     {
       next: { revalidate: 10 },
     }

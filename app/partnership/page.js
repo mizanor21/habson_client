@@ -2,7 +2,7 @@ import PartnerSection from "@/components/Partnership/PartnerSection";
 import React from "react";
 
 const Partnership = async () => {
-  const res = await fetch("https://habson-admin.vercel.app/api/partnership", {
+  const res = await fetch("https://admin.habson.org/api/partnership", {
     next: { revalidate: 10 },
   });
 

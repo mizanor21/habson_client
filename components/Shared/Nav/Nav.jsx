@@ -48,7 +48,7 @@ const Nav = () => {
     const fetchData = async () => {
       try {
         const response = await fetch(
-          "https://habson-admin.vercel.app/api/works"
+          "https://admin.habson.org/api/works"
         );
         const data = await response.json();
         const caseStudy = data.filter((item) => item.category === "Casestudy");

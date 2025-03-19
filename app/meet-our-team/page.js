@@ -1,7 +1,7 @@
 import MeetOurTeam from "@/components/About/MeetOurTeam";
 
 const page = async () => {
-  const res = await fetch("https://habson-admin.vercel.app/api/teams", {
+  const res = await fetch("https://admin.habson.org/api/teams", {
     next: { revalidate: 10 },
   });
   const teamsData = await res.json();

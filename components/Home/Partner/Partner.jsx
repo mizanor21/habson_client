@@ -19,7 +19,7 @@ const Partner = () => {
     const fetchData = async () => {
       try {
         const res = await fetch(
-          "https://habson-admin.vercel.app/api/partnership",
+          "https://admin.habson.org/api/partnership",
           {
             next: { revalidate: 10 },
           }

@@ -4,7 +4,7 @@ import Image from "next/image";
 import ButtonEffect from "@/components/Custom/Button";
 
 const Achievement = async () => {
-  const res = await fetch("https://habson-admin.vercel.app/api/achievements", {
+  const res = await fetch("https://admin.habson.org/api/achievements", {
     next: { revalidate: 10 },
   });
   const awards = await res.json();

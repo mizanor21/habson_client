@@ -12,7 +12,7 @@ import Trending from "@/components/Home/Trending/Trending";
 import Partner from "@/components/Home/Partner/Partner";
 
 export default async function Home() {
-  const res = await fetch("https://habson-admin.vercel.app/api/home", {
+  const res = await fetch("https://admin.habson.org/api/home", {
     next: { revalidate },
   });
 
@@ -30,19 +30,17 @@ export default async function Home() {
     videoSection = {},
     elevateSection = {},
     defineUsSection = {},
-    slideshowSection = {},
-    solutionSection = {},
     journeySection = {},
     brandSection = {},
   } = home[0] || {};
 
-  const res1 = await fetch("https://habson-admin.vercel.app/api/mouse-movement", {
+  const res1 = await fetch("https://admin.habson.org/api/mouse-movement", {
     next: { revalidate },
   });
 
   const mouseMovement = await res1.json();
 
-  const res2 = await fetch("https://habson-admin.vercel.app/api/slideshow", {
+  const res2 = await fetch("https://admin.habson.org/api/slideshow", {
     next: { revalidate },
   });
 

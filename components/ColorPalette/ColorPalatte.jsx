@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useRef, useEffect, useState } from "react";
 
 const fetchColorData = async () => {
-  const res = await fetch("https://habson-admin.vercel.app/api/color-palette", {
+  const res = await fetch("https://admin.habson.org/api/color-palette", {
     next: { revalidate: 10 },
   });
   return await res.json();
